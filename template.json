@@ -1,0 +1,291 @@
+{
+	"Actor":{
+		"types":[
+			"Charakter",
+			"NPC",
+			"Elite",
+			"Boss",
+			"Token"
+		],		
+		"templates":{
+			"mainattributes":{
+				"Strenght": {
+					"name": "Körperkraft",
+					"value": 0
+				},
+				"Dexterity": {
+					"name": "Geschicklichkeit",
+					"value": 0
+				},
+				"Perception": {
+					"name": "Reflexe/Sinne",
+					"value": 0
+				},
+				
+				"Mind": {
+					"name": "Verstand",
+					"value": 0
+				},
+				"Soul": {
+					"name": "Seelenkraft",
+					"value": 0
+				},
+				"Spirit": {
+					"name": "Spiritualität",
+					"value": 0
+				},
+				
+				"Charisma": {
+					"name": "Charisma",
+					"value": 0
+				},
+				"Manipulation": {
+					"name": "Manipulation",
+					"value": 0
+				},
+				"Interaction": {
+					"name": "Interaktion",
+					"value": 0
+				},
+				
+				"Intuition": {
+					"name": "Intuition",
+					"value": 0
+				},
+				"SenseOfDanger": {
+					"name": "Gefahrensinn",
+					"value": 0
+				},
+				"CosmosConsistent": {
+					"name": "Kosmos-Einklang",
+					"value": 0
+				}
+			},
+			"subattributes":{
+				"Initiative": {
+					"name": "Initiative",
+					"value": 0
+				},
+				"MainPower": {
+					"name": "Allgemeine Runden",
+					"value": 0
+				},
+				"MagicPower": {
+					"name": "Magierunden",
+					"value": 0
+				},
+				"FaithPower": {
+					"name": "Glaubensrunden",
+					"value": 0
+				},
+				"SpiritPower": {
+					"name": "Chakrarunden",
+					"value": 0
+				},
+				"Stamina": {
+					"name": "Ausdauer",
+					"value": 0
+				}
+			},
+			"charinfos_1":{
+				"CharName": {
+					"name": "Charaktername",
+					"value": ""
+				},
+				"PlayerName": {
+					"name": "Spielername",
+					"value": ""
+				},
+				"CharLevel": {
+					"name": "Charakterstufe",
+					"value": 0
+				}
+			},
+			"charinfos_2":{
+				"XP": {
+					"name": "Erfahrungspunte aktuell",
+					"value": 0
+				},
+				"XPcom": {
+					"name": "Erfahrungspunte gesamt",
+					"value": 0
+				},
+				"EP": {
+					"name": "Essenzpunte aktuell",
+					"value": 0
+				},
+				"EPcom": {
+					"name": "Essenzpunte gesamt",
+					"value": 0
+				},
+				"CP": {
+					"name": "Kosmospunte aktuell",
+					"value": 0
+				},
+				"CPcom": {
+					"name": "Kosmospunte gesamt",
+					"value": 0
+				}
+			},
+			"charinfos_3":{			
+				"Age": {
+					"name": "Alter",
+					"value": 0
+				},
+				"Sex": {
+					"name": "Geschlecht",
+					"value": 0
+				},
+				"Height": {
+					"name": "Grösse",
+					"value": 0
+				},
+				"Weight": {
+					"name": "Gewicht",
+					"value": 0
+				},
+				"Eyecolor": {
+					"name": "Augenfarbe",
+					"value": 0
+				},
+				"Haircolor": {
+					"name": "Haarfarbe",
+					"value": 0
+				},
+				"Being": {
+					"name": "Wesen",
+					"value": 0
+				},
+				"Origin": {
+					"name": "Herkunft",
+					"value": 0
+				},
+				"Faith": {
+					"name": "Glaube",
+					"value": 0
+				}
+			},			
+			"charinfos_4":{			
+				"PathConcept": {
+					"name": "Pfad/Konzept",
+					"value": 0
+				},
+				"PathPoints": {
+					"name": "Pfadpunkte",
+					"value": 0
+				}
+			},
+			"equipment": {
+				"Equipment":{
+					"name": "Equipment",
+					"value": ""
+				},
+				"Credits":{
+					"name": "Geld",
+					"value": ""
+				},
+				"MaritsAndFlaws":{
+					"name": "Vorteile&Nachteile",
+					"value": ""
+				}
+				
+			}
+		},
+		"Charakter": {
+			"templates": [
+				"mainattributes",
+				"subattributes",
+				"charinfos_1",
+				"charinfos_2",
+				"charinfos_3",
+				"charinfos_4",
+				"equipment"
+			]
+		},
+		"NPC": {
+			"templates": [
+				"mainattributes",
+				"subattributes",
+				"charinfos_1",
+				"equipment"
+			]			
+		},
+		"Elite": {
+			"templates": [
+				"mainattributes",
+				"subattributes",
+				"charinfos_1",
+				"charinfos_3",
+				"equipment"
+			]			
+		},
+		"Boss": {
+			"templates": [
+				"mainattributes",
+				"subattributes",
+				"charinfos_1",
+				"charinfos_3",
+				"charinfos_4",
+				"equipment"
+			]			
+		},
+		"Token": {
+			"templates": [
+				"charinfos_1"
+			]
+		}			
+	},
+	"Item":{
+		"types": [
+			"Waffen",
+			"Skills"
+		],
+		"templates": {
+			"mainstats":{
+				"Type": {
+					"name": "Waffenart",
+					"value": ""
+				},
+				"Damage": {
+					"name": "Schaden",
+					"value": 0
+				},
+				"Hit_chance": {
+					"name": "Trefferchance",
+					"value": 0					
+				}
+			},
+			"firearms":{
+				"Reload": {
+					"name": "Nachladen",
+					"value": 0
+				},
+				"Range": {
+					"name": "Reichweite",
+					"value": 0
+				}
+			},
+			"skill_stats": {
+				"Skillname": {
+					"name": "Skill Name",
+					"value": ""
+				},
+				"Skill_roll": {
+					"name": "Würfelwurf",
+					"value": ""
+				}
+			}
+		},
+		"Waffen": {
+			"templates": [
+				"mainstats",
+				"firearms"
+			]				
+		},
+		"Skills":{
+			"templates": [
+				"skill_stats"
+			]
+		}
+	}
+}

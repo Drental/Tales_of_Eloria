@@ -1,0 +1,33 @@
+{
+    "name": "toeloria",
+    "title": "Tales of Eloria",
+    "description": "A Fantasy/Pre-Steampunk System form Zolthex",
+    "version": "0.8.0",
+    "minimumCoreVersion": "0.8.9",
+    "compatibleCoreVersion": "0.8.9",
+    "author": "Zolthex",
+    "authors": [
+        {
+            "name": "Zolthex",
+            "email": "Zolthex@aol.com"
+        }
+    ],
+    "esmodules": ["module/toeloria.js"],
+    "styles": ["css/toeloria.css"],
+    "scripts": [],
+    "packs": [],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        }
+    ],
+    "gridDistance": 1,
+    "gridUnits": "m"	
+}
