@@ -1,4 +1,4 @@
-import toeloriaItemSheet form "./module/sheets/toeloriaItemSheet.js";
+import toeloriaItemSheet from "./sheets/toeloriaItemSheet.js";
 
 Hooks.once("init", function(){
 	console.log("toeloria | Initialising Tales of Eloria System");
