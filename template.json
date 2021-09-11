@@ -187,9 +187,20 @@
 				"MaritsAndFlaws":{
 					"name": "Vorteile&Nachteile",
 					"value": ""
-				}
-				
-			}
+				}				
+			},
+			"profile": {
+                "biography": "",
+                "gender": "",
+                "birthday": "",
+                "birthplace": "",
+                "age": 0,
+                "height": 0,
+                "hairColor": "",
+                "weight": 0,
+                "eyeColor": "",
+                "specialCharacteristics": ""
+            }
 		},
 		"Charakter": {
 			"templates": [
@@ -199,7 +210,8 @@
 				"charinfos_2",
 				"charinfos_3",
 				"charinfos_4",
-				"equipment"
+				"equipment",
+				"profile"
 			]
 		},
 		"NPC": {
@@ -231,7 +243,8 @@
 		},
 		"Token": {
 			"templates": [
-				"charinfos_1"
+				"charinfos_1",
+				"profile"
 			]
 		}			
 	},
