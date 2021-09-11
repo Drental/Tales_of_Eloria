@@ -16,7 +16,13 @@
     "styles": ["css/toeloria.css"],
     "scripts": [],
     "packs": [],
-    "languages": [],
+    "languages": [
+        {
+            "lang": "de",
+            "name": "Deutsch",
+            "path": "lang/de.json"
+        }        
+    ],
     "gridDistance": 1,
     "gridUnits": "m"	
 }
