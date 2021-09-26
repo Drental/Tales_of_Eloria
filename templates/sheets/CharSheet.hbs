@@ -1,8 +1,51 @@
-<form class="Character-Sheet {cssClass}" autocomplete="off">
+<form class="Character-Sheet {{cssClass}}" autocomplete="off">
+
+    {{!-- Character Header Stats - Start --}}
+    <div class="header personal">
+        <h1>Charakterdaten</h1>
+    </div>
+    {{!-- Character Header Stats - End --}}
+    
+    <br/>
+    
+    {{!-- Character Basic Stats - Start --}}
+    
+    <section class="general" ondragstart="return false;" ondrop="return false;">
+
+        <table>
+            <tr>
+                <td>
+                    <img class="charimg profile" src="{{actor.img}}" title="{{actor.name}}" height="110" width="110" data-edit="img">
+                </td>
+                <td>
+                    <div class="charname item">
+                    <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name" />
+                    <span class="label name">&nbsp;Name</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="item">
+                        <input class="input species" style="box-shadow: none !important;" type="text" value="Spezies" placeholder="Spezies" />
+                        <span class="label species">&nbsp;Spezies</span>
+                    </div>
+                </td>
+                <td>
+
+                    <div id="field-class" class="item">
+                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="Klasse" placeholder="Klasse" />
+                        <span class="label class">&nbsp;Klasse</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    {{!-- Character Basic Stats - End --}}
+
+    <p/><br/>
 
     {{!-- Character Sheet Navigation --}}
     <nav class="sheet-navigation tabs" data-group="primary">
-		<a class="item active" data-tab="charstats">Status</a>
+		<a class="item active" data-tab="stats">Status</a>
         <a class="item" data-tab="attributes">Attribute</a>
         <a class="item" data-tab="inventory">Inventar</a>
         <a class="item" data-tab="features">Fertigkeiten</a>
@@ -15,37 +58,44 @@
     <section class="sheet-body">
 
         <div class="tab stats flexrow" data-group="primary" data-tab="stats">
+            <p/><br/>
              {{> "systems/toeloria/templates/sheets/character/actor-stats.html" sections=stats}}
         </div>
 
         <div class="tab attributes flexrow" data-group="primary" data-tab="attributes">
+            <p/><br/>
              {{> "systems/toeloria/templates/sheets/character/actor-attributes.html" sections=attributes}}
         </div>
 
         {{!-- Inventory Tab --}}
         <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
+            <p/><br/>
             {{> "systems/toeloria/templates/sheets/character/actor-inventory.html" sections=inventory}}
         </div>
 
         {{!-- Features Tab --}}
         <div class="tab features flexcol" data-group="primary" data-tab="features">
+            <p/><br/>
             {{> "systems/toeloria/templates/sheets/character/actor-features.html" sections=features}}
         </div>
 
         {{!-- Spellbook Tab --}}
         <div class="tab spellbook flexcol" data-group="primary" data-tab="spellbook">
+            <p/><br/>
             {{> "systems/toeloria/templates/sheets/character/actor-spellbook.html" sections=spellbook}}
         </div>
 
         {{!-- Effects Tab --}}
         <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+            <p/><br/>
             {{> "systems/toeloria/templates/sheets/character/active-effects.html" sections=effects}}
         </div>
 
         {{!-- Biography Tab --}}
         <div class="tab flexrow" data-group="primary" data-tab="biography">
+            <p/><br/>
             <div class="biography">
-                {{editor content=data.details.biography.value target="data.details.biography.value" button=true owner=owner editable=editable rollData=rollData}}
+                {{editor content=data.data.biography.value target="data.biography.value" button=true owner=owner editable=editable}}
             </div>
         </div>
         {{!-- Character Sheet Body - End --}}

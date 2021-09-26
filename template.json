@@ -1,12 +1,6 @@
 {
 	"Actor":{
-		"types":[
-			"Charakter",
-			"NPC",
-			"Elite",
-			"Boss",
-			"Token"
-		],		
+		"types":["Charakter", "NPC", "Elite", "Boss", "Token"],		
 		"templates":{
 			"mainattributes":{
 				"Strenght": {
@@ -79,7 +73,7 @@
 					"value": 0
 				},
 				"SpiritPower": {
-					"name": "Chakrarunden",
+					"name": "Askeserunden",
 					"value": 0
 				},
 				"Stamina": {
@@ -190,17 +184,18 @@
 				}				
 			},
 			"profile": {
-                "biography": "",
-                "gender": "",
-                "birthday": "",
-                "birthplace": "",
-                "age": 0,
-                "height": 0,
-                "hairColor": "",
-                "weight": 0,
-                "eyeColor": "",
-                "specialCharacteristics": ""
-            }
+				"biography": {
+					"value": ""
+				},
+				"gender": "",
+				"birthday": "",
+				"birthplace": "",
+				"age": 0,
+				"height": 0,
+				"hairColor": "",
+				"weight": 0,
+				"eyeColor": ""
+			}
 		},
 		"Charakter": {
 			"templates": [
@@ -249,10 +244,7 @@
 		}			
 	},
 	"Item":{
-		"types": [
-			"Waffen",
-			"Skills"
-		],
+		"types": ["Waffen",	"Skills"],
 		"templates": {
 			"mainstats":{
 				"Type": {

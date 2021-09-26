@@ -1,0 +1,6 @@
+.biography,
+.biography > .editor,
+.biography .tox {
+    min-height: 300px;
+    width: 100%;
+} 

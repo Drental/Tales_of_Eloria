@@ -3,7 +3,7 @@ export default class toeloriaCharSheet extends ActorSheet {
 		return mergeObject(super.defaultOptions, {
         template: "systems/toeloria/templates/sheets/CharSheet.hbs",
         classes: ["toeloria", "sheet", "CharSheet"],
-        tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "description"}]        
+        tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "stats"}]   
         });
 	};
 };
