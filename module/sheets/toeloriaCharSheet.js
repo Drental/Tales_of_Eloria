@@ -6,4 +6,14 @@ export default class toeloriaCharSheet extends ActorSheet {
         tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "stats"}]   
         });
 	};
+	activateListeners(html) {
+		if ( this.isEditable ) {
+			html.find('.rollable [data-toe-roll]').on("click", (event) => {
+				const { toeRoll } = event.currentTarget.dataset;
+				const roll = new Roll(toeRoll + "+2");
+				roll.evaluate();
+				roll.toMessage();
+			});
+		}
+	}
 };
