@@ -3,7 +3,7 @@
 		"types":["Charakter", "NPC", "Elite", "Boss", "Token"],		
 		"templates":{
 			"mainattributes":{
-				"Strenght": {
+				"Strength": {
 					"name": "Körperkraft",
 					"value": 0
 				},
@@ -12,7 +12,7 @@
 					"value": 0
 				},
 				"Perception": {
-					"name": "Reflexe/Sinne",
+					"name": "Reflexe & Sinne",
 					"value": 0
 				},
 				
