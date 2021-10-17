@@ -1,67 +1,220 @@
-Features
+<label style="width: 150px; color: rgb(0, 0, 0); text-align: center;">Kampffertigkeiten</label>
+<table class="attribute_center" border="2">
+   <tbody>
+      <tr>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+      </tr>
+      <tr>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(255, 0, 0);">Nahkampf</label></td>
+        <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+   </tr>
+    <tr>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Waffenlos</label></td>
+         <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Waffenlos-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Hiebwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Dexterity_value" style="width:35px; text-align:center;" title="Hiebwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Dexterity" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Klingenwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Klingenwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Perception" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fechtwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Mind_value" style="width:35px; text-align:center;" title="Fechtwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Mind" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Kettenwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Soul_value" style="width:35px; text-align:center;" title="Kettenwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Soul" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Langwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Spirit_value" style="width:35px; text-align:center;" title="Langwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Spirit" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Peitschenwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="Charisma_value" style="width:35px; text-align:center;" title="Peitschenwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Charisma" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Exotische Waffen</label></td>
+         <td nowrap align="center"><input type="number" name="Manipulation_value" style="width:35px; text-align:center;" title="Exotische Waffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"></td>
+         <td nowrap align="center"></td>
+         <td nowrap align="center"></td>
+      </tr>
+      <tr>
+          <td colspan="9" style="height: 15px;"></td>
+      </tr>
+      <tr>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(255, 0, 0);">Fernampf</label></td>
+        <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+        <td nowrap align="center"></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Blasrohr</label></td>
+         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Blasrohr-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wurfwaffen</label></td>
+         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Wurfwaffen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Bogen & Armbrust</label></td>
+         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Bogen & Armbrust-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Pistolen & Revolver</label></td>
+        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Pistolen & Revolver-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Gewehre & Flinten</label></td>
+        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Gewehre & Flinten-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Dampfdruckwaffen</label></td>
+        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Dampfdruckwaffen-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+     </tr>
+  </tbody>
+</table>
+			
+<br>
 
-Name
-	
-Attr.
-	
-Basis
-	
-Makro
-
-
-Kampffertigkeiten:
-
-Nahkampf:
-					
-Waffenlos 					
-Hiebwaffen 					
-Klingenwaffen 					
-Fechtwaffen 					
-Kettenwaffen 					
-Langwaffen 					
-Peitschenwaffen 					
-Exotische Waffen 					
- 
-Fernkampf:
-					
-Blasrohr 					
-Wurfwaffen 					
-Bogen & Armbrust 					
-Pistolen & Revolver 					
-Gewehre & Flinten 					
-Dampfdruckwaffen 					
-Belagerungswaffen 	
-	
-
-
-Fertigkeiten Bereich
-
-Durchhaltevermögen 			  
-Standhaftigkeit 			  
-Willensstärke 			  
-Schwimmen 			  
-Klettern 			  
-Kraftakt 			  
-Verhandeln 			  
-Einschüchtern 			  
-Flirten 			  
- 
-Betrug 			  
-Selbstbeherrschung 			  
-Astralsicht 			  
-Wahrnehmung 			  
-Empathie 			  
-Erinnerung 			  
-Reiten/Lenken 			  
-Akrobatik 			  
-Schleichen 			  
-	
-Fingerfertigkeit 			  
-Allgemeinwissen 			  
-Technik 			  
-Orientierung 			  
-Logisches Denken 			  
-Improvisieren 			  
-Singen 			  
-Tanzen 			  
-Musizieren
+<label style="width: 150px; color: rgb(0, 0, 0); text-align: center;">Allgemeine Fertigkeiten</label>
+<table class="attribute_center" border="2">
+   <tbody>
+      <tr>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+      </tr>
+      <tr>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Durchhaltevermögen</label></td>
+         <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Durchhaltevermögen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Standhaftigkeit</label></td>
+         <td nowrap align="center"><input type="number" name="Dexterity_value" style="width:35px; text-align:center;" title="Standhaftigkeit-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Dexterity" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Willensstärke</label></td>
+         <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Willensstärke" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Perception" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Schwimmen</label></td>
+         <td nowrap align="center"><input type="number" name="Mind_value" style="width:35px; text-align:center;" title="Schwimmen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Mind" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Klettern</label></td>
+         <td nowrap align="center"><input type="number" name="Soul_value" style="width:35px; text-align:center;" title="Klettern-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Soul" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Kraftakt</label></td>
+         <td nowrap align="center"><input type="number" name="Spirit_value" style="width:35px; text-align:center;" title="Kraftakt" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Spirit" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Verhandeln</label></td>
+         <td nowrap align="center"><input type="number" name="Charisma_value" style="width:35px; text-align:center;" title="Verhandeln-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Charisma" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Einschüchtern</label></td>
+         <td nowrap align="center"><input type="number" name="Manipulation_value" style="width:35px; text-align:center;" title="Einschüchtern-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Flirten</label></td>
+         <td nowrap align="center"><input type="number" name="Interaction_value" style="width:35px; text-align:center;" title="Flirten-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Interaction" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr>
+        <td colspan="9" style="height: 15px;"></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Betrug</label></td>
+         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Betrug-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Selbstbeherrschung</label></td>
+         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Selbstbeherrschung-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Empathie </label></td>
+         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Empathie -Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+     <tr style="width: 120px;">
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Astralsicht</label></td>
+        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Astralsicht-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wahrnehmung</label></td>
+        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Wahrnehmung-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Erinnerung</label></td>
+        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Erinnerung-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+     </tr>
+     <tr style="width: 120px;">
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Reiten & Lenken</label></td>
+        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Reiten & Lenken-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Akrobatik</label></td>
+        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Akrobatik-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Schleichen</label></td>
+        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Schleichen-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+     </tr>
+    <tr>
+        <td colspan="9" style="height: 15px;"></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fingerfertigkeit</label></td>
+         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Fingerfertigkeit-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Allgemeinwissen</label></td>
+         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Allgemeinwissen-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Technik</label></td>
+         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Technik-Wert" value="10"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Orientierung</label></td>
+        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Orientierung-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Logisches Denken</label></td>
+        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Logisches Denken-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Improvisieren</label></td>
+        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Improvisieren-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+     </tr>
+     <tr style="width: 120px;">
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Singen</label></td>
+        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Singen-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Tanzen</label></td>
+        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Tanzen-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+        <td nowrap align="center"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Musizieren</label></td>
+        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Musiziereng-Wert" value="10"></td>
+        <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(./Button_trans-5.png); height: 27px; width: 27px;"></button></td>
+     </tr>
+ </tbody>
+</table>  

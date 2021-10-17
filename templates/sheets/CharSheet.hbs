@@ -47,10 +47,10 @@
     <nav class="sheet-navigation tabs" data-group="primary">
 		<a class="item active" data-tab="stats">Status</a>
         <a class="item" data-tab="attributes">Attribute</a>
-        <a class="item" data-tab="inventory">Inventar</a>
         <a class="item" data-tab="features">Fertigkeiten</a>
         <a class="item" data-tab="spellbook">Buch der Gaben</a>
-        <a class="item" data-tab="effects">Notizen</a>
+        <a class="item" data-tab="inventory">Inventar</a>
+        <a class="item" data-tab="notes">Notizen</a>
         <a class="item" data-tab="biography">Biographie</a>
     </nav>
     
@@ -69,12 +69,6 @@
              {{> "systems/toeloria/templates/sheets/character/actor-attributes.html" sections=attributes}}
         </div>
 
-        {{!-- Inventory Tab --}}
-        <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
-            <p/><br/>
-            {{> "systems/toeloria/templates/sheets/character/actor-inventory.html" sections=inventory}}
-        </div>
-
         {{!-- Features Tab --}}
         <div class="tab features flexcol" data-group="primary" data-tab="features">
             <p/><br/>
@@ -87,15 +81,20 @@
             {{> "systems/toeloria/templates/sheets/character/actor-spellbook.html" sections=spellbook}}
         </div>
 
-        {{!-- Effects Tab --}}
-        <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+        {{!-- Inventory Tab --}}
+        <div class="tab inventory flexcol" data-group="primary" data-tab="inventory">
             <p/><br/>
-            {{> "systems/toeloria/templates/sheets/character/active-effects.html" sections=effects}}
+            {{> "systems/toeloria/templates/sheets/character/actor-inventory.html" sections=inventory}}
+        </div>
+
+        {{!-- Notes Tab --}}
+        <div class="tab notes flexcol" data-group="primary" data-tab="notes">
+            <p/><br/>
+            {{> "systems/toeloria/templates/sheets/character/actor-notes.html" sections=notes}}
         </div>
 
         {{!-- Biography Tab --}}
-        <div class="tab flexrow" data-group="primary" data-tab="biography">
-            <p/><br/>
+        <div class="tab biography flexrow" data-group="primary" data-tab="biography">
             <div class="biography">
                 {{editor content=data.data.biography.value target="data.biography.value" button=true owner=owner editable=editable}}
             </div>

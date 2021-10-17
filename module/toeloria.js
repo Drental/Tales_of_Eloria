@@ -15,7 +15,7 @@ Hooks.once("init", async function(){
 
 async function preloadHandlebarsTemplates() {
 	const templatesPath = [
-		"systems/toeloria/templates/sheets/character/active-effects.html",
+		"systems/toeloria/templates/sheets/character/actor-notes.html",
 		"systems/toeloria/templates/sheets/character/actor-attributes.html",
 		"systems/toeloria/templates/sheets/character/actor-features.html",
 		"systems/toeloria/templates/sheets/character/actor-inventory.html",
