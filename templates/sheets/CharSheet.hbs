@@ -28,10 +28,10 @@
                 </td>
                 <td>
                     <div class="charname item" align="center"><br>
-                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name" /><br>
-                        <span class="label name">&nbsp;Charaktername</span><br><br>
-                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="Spielername" placeholder="Spielername" /><br>
-                        <span class="label name">&nbsp;Spielername</span><br>&nbsp;
+                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name"/>
+                        <span class="label">&nbsp;Charaktername</span><br><br>
+                        <input class="input" style="box-shadow: none !important;" name="data.PlayerName.name" type="text" value="{{actor.data.PlayerName.name}}" placeholder="Spielername" /><br>
+                        <span class="label">&nbsp;Spielername</span><br>&nbsp;
                     </div>
                 </td>
                 <td>
@@ -110,7 +110,7 @@
         {{!-- Biography Tab --}}
         <div class="tab biography flexrow" data-group="primary" data-tab="biography">
             <div class="biography">
-                {{editor content=data.data.biography.value target="data.biography.value" button=true owner=owner editable=editable}}
+                {{editor content=data.biography.value target="biography.value" button=true owner=owner editable=editable}}
             </div>
         </div>
         {{!-- Character Sheet Body - End --}}

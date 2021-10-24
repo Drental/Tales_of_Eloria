@@ -1,37 +1,73 @@
-<label style="width: 150px; color: rgb(0, 0, 0); text-align: center;">Status Bereich</label>
+<label style="width: 150px; color: rgb(0, 0, 0); text-align: center">Informations Bereich</label>
 <table class="attribute_center" border="2">
-   <tbody>
-      <tr>
-         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Status</label></th>
-         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (aktuell)</label></th>
-         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (gesant)</label></th>
-         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Status</label></th>
-         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (aktuell)</label></th>
-         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (gesant)</label></th>
-         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Status</label></th>
-         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (aktuell)</label></th>
-         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert (gesant)</label></th>
-      </tr>
-      <tr style="width: 120px;">
-         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Ressourcen Bereich</td>
-      </tr>
-      <tr style="width: 120px;">
-      </tr> 
-   </tbody>
+	<tbody>
+		<tr>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Ressource</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (aktuell)</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (gesamt)</label></th>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Ressource</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (aktuell)</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (gesamt)</label></th>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Ressource</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (aktuell)</label></th>
+			<th nowrap style="width: 75px"><label class="sheet-table-header" style="width: 75px; text-align: center; color: rgb(0, 0, 0)">Wert (gesamt)</label></th>
+		</tr>
+		<tr style="width: 120px">
+			<td colspan="12" style="height: 15px; font-size: 13px; text-align: center; color: rgb(255, 50, 0)" border="1">Ressourcen Bereich</td>
+		</tr>
+		<tr style="width: 120px">
+			<td nowrap align="center" style="width: 120px">Erfahrungspunkte</td>
+			<td nowrap align="center"><input type="number" name="data.XP.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.XP.value}}" /></td>
+			<td nowrap align="center"><input type="number" name="data.XPcom.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.XPcom.value}}" /></td>
+			<td nowrap align="center" style="width: 120px">Essenzpunkte</td>
+			<td nowrap align="center"><input type="number" name="data.EP.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.EP.value}}" /></td>
+			<td nowrap align="center"><input type="number" name="data.EPcom.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.EPcom.value}}" /></td>
+			<td nowrap align="center" style="width: 120px">Kosmospunkte</td>
+			<td nowrap align="center"><input type="number" name="data.CP.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.CP.value}}" /></td>
+			<td nowrap align="center"><input type="number" name="data.CPcom.value" style="width: 35px; text-align: center" title="Willensstärke" value="{{actor.data.CPcom.value}}" /></td>
+		</tr>
+	</tbody>
 </table>
 
-"name": "Erfahrungspunte aktuell",
-"name": "Erfahrungspunte gesamt",
-"name": "Essenzpunte aktuell",
-"name": "Essenzpunte gesamt",
-"name": "Kosmospunte aktuell",
-"name": "Kosmospunte gesamt",
+<br />
 
-"name": "Alter",
-"name": "Geschlecht",
-"name": "Grösse",
-"name": "Gewicht",
-"name": "Augenfarbe",
-"name": "Haarfarbe",
-"name": "Herkunft",
-"name": "Glaube",
+<table class="attribute_center" border="2">
+	<tbody>
+		<tr>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Status</label></th>
+			<th nowrap style="width: 82px"><label class="sheet-table-header" style="width: 82.5px; text-align: center; color: rgb(0, 0, 0)">Wert</label></th>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Status</label></th>
+			<th nowrap style="width: 82px"><label class="sheet-table-header" style="width: 82.5px; text-align: center; color: rgb(0, 0, 0)">Wert</label></th>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Status</label></th>
+			<th nowrap style="width: 82px"><label class="sheet-table-header" style="width: 82.5px; text-align: center; color: rgb(0, 0, 0)">Wert</label></th>
+			<th nowrap style="width: 120px"><label class="sheet-table-header" style="width: 120px; text-align: center; color: rgb(0, 0, 0)">Status</label></th>
+			<th nowrap style="width: 82px"><label class="sheet-table-header" style="width: 82.5px; text-align: center; color: rgb(0, 0, 0)">Wert</label></th>
+		</tr>
+		<tr style="width: 120px">
+			<td colspan="12" style="height: 15px; font-size: 13px; text-align: center; color: rgb(255, 50, 0)" border="1">Status Bereich</td>
+		</tr>
+		<tr style="width: 120px">
+			<td nowrap align="center" style="width: 120px">Alter</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Geschlecht</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Grösse</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Gewicht</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+		</tr>
+		<tr style="width: 120px">
+			<td colspan="12" style="height: 15px; font-size: 13px; text-align: center; color: rgb(255, 50, 0)" border="1">Status Bereich</td>
+		</tr>
+		<tr style="width: 120px">
+			<td nowrap align="center" style="width: 120px">Augenfarbe</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Haarfarbe</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Herkunft</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+			<td nowrap align="center" style="width: 120px">Glaube</td>
+			<td nowrap align="center"><input type="number" name="Perception_value" style="width: 35px; text-align: center" title="Willensstärke" value="0" /></td>
+		</tr>
+	</tbody>
+</table>
