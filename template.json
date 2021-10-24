@@ -1,8 +1,8 @@
 {
-	"Actor":{
-		"types":["Charakter", "NPC", "Elite", "Boss", "Token"],		
-		"templates":{
-			"mainattributes":{
+	"Actor": {
+		"types": ["Charakter", "NPC", "Elite", "Boss", "Token"],
+		"templates": {
+			"mainattributes": {
 				"Strength": {
 					"name": "Körperkraft",
 					"value": 1
@@ -28,7 +28,7 @@
 					"name": "Spiritualität",
 					"value": 1
 				},
-				
+
 				"Charisma": {
 					"name": "Charisma",
 					"value": 1
@@ -41,7 +41,7 @@
 					"name": "Interaktion",
 					"value": 1
 				},
-				
+
 				"Intuition": {
 					"name": "Intuition",
 					"value": 1
@@ -55,7 +55,7 @@
 					"value": 1
 				}
 			},
-			"subattributes":{
+			"subattributes": {
 				"Initiative": {
 					"name": "Initiative",
 					"value": 0
@@ -81,21 +81,19 @@
 					"value": 0
 				}
 			},
-			"charinfos_1":{
+			"charinfos_1": {
 				"CharName": {
-					"name": "Charaktername",
-					"value": ""
+					"name": "Charaktername"
 				},
 				"PlayerName": {
-					"name": "Spielername",
-					"value": ""
+					"name": "Spielername"
 				},
 				"CharLevel": {
 					"name": "Charakterstufe",
 					"value": 0
 				}
 			},
-			"charinfos_2":{
+			"charinfos_2": {
 				"XP": {
 					"name": "Erfahrungspunte aktuell",
 					"value": 0
@@ -121,7 +119,7 @@
 					"value": 0
 				}
 			},
-			"charinfos_3":{			
+			"charinfos_3": {
 				"Age": {
 					"name": "Alter",
 					"value": 0
@@ -158,8 +156,8 @@
 					"name": "Glaube",
 					"value": 0
 				}
-			},			
-			"charinfos_4":{			
+			},
+			"charinfos_4": {
 				"PathConcept": {
 					"name": "Pfad/Konzept",
 					"value": 0
@@ -170,18 +168,18 @@
 				}
 			},
 			"equipment": {
-				"Equipment":{
+				"Equipment": {
 					"name": "Equipment",
 					"value": ""
 				},
-				"Credits":{
+				"Credits": {
 					"name": "Geld",
 					"value": ""
 				},
-				"MaritsAndFlaws":{
+				"MaritsAndFlaws": {
 					"name": "Vorteile&Nachteile",
 					"value": ""
-				}				
+				}
 			},
 			"profile": {
 				"biography": {
@@ -210,43 +208,22 @@
 			]
 		},
 		"NPC": {
-			"templates": [
-				"mainattributes",
-				"subattributes",
-				"charinfos_1",
-				"equipment"
-			]			
+			"templates": ["mainattributes", "subattributes", "charinfos_1", "equipment"]
 		},
 		"Elite": {
-			"templates": [
-				"mainattributes",
-				"subattributes",
-				"charinfos_1",
-				"charinfos_3",
-				"equipment"
-			]			
+			"templates": ["mainattributes", "subattributes", "charinfos_1", "charinfos_3", "equipment"]
 		},
 		"Boss": {
-			"templates": [
-				"mainattributes",
-				"subattributes",
-				"charinfos_1",
-				"charinfos_3",
-				"charinfos_4",
-				"equipment"
-			]			
+			"templates": ["mainattributes", "subattributes", "charinfos_1", "charinfos_3", "charinfos_4", "equipment"]
 		},
 		"Token": {
-			"templates": [
-				"charinfos_1",
-				"profile"
-			]
-		}			
+			"templates": ["charinfos_1", "profile"]
+		}
 	},
-	"Item":{
-		"types": ["Waffen",	"Skills", "Gegenstände"],
+	"Item": {
+		"types": ["Waffen", "Skills", "Gegenstände"],
 		"templates": {
-			"mainstats":{
+			"mainstats": {
 				"Type": {
 					"name": "Waffenart",
 					"value": ""
@@ -257,10 +234,10 @@
 				},
 				"Hit_chance": {
 					"name": "Trefferchance",
-					"value": 0					
+					"value": 0
 				}
 			},
-			"firearms":{
+			"firearms": {
 				"Reload": {
 					"name": "Nachladen",
 					"value": 0
@@ -282,20 +259,13 @@
 			}
 		},
 		"Waffen": {
-			"templates": [
-				"mainstats",
-				"firearms"
-			]				
+			"templates": ["mainstats", "firearms"]
 		},
-		"Skills":{
-			"templates": [
-				"skill_stats"
-			]
+		"Skills": {
+			"templates": ["skill_stats"]
 		},
-		"Gegenstände":{
-			"templates": [
-				"skill_stats"
-			]
+		"Gegenstände": {
+			"templates": ["skill_stats"]
 		}
 	}
 }

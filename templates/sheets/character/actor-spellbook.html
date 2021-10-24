@@ -1,8 +1,7 @@
-<fieldset repeater class="repeating_feets" name="repeating_feets">
-    <div repeater-group>
- <table class="attribute_center" border="2" >
-    <tbody>
-       <!--<tr>
+<div repeater-group>
+	<table class="attribute_center" border="2">
+		<tbody>
+			<!--<tr>
           <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Fertigkeit</label></th>
           <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
           <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
@@ -13,52 +12,122 @@
           <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
           <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
        </tr>-->
-       <tr>
-          <td class="sheet-table-header-left">Skillname:&nbsp;<input type="text" class="sheet-table-data-center-feets-rep" name="attr_otherfeetname" style="width:145px;" title="feet name"></td>
-          <td>Typus:&nbsp;&nbsp;&nbsp;&nbsp;
-             <select class="sheet-table-data-center-sm" style="height: 24px; width: 80px; font-size: 0.75em;" class="sheet-table-data-center-feets-rep" name="attr_otherfeetstat" title="Ability used for feet">
-                   <option type="text" style="width: 45px;" value="1" selected>Magie</option>
-                   <option type="text" style="width: 45px;" value="1">Glaube</option>
-                   <option type="text" style="width: 45px;" value="1">Chakra</option>
-             </select>
-          </td>
-          <td class="sheet-table-data-center-sm">Diff:<input type="text" class="sheet-table-data-center-feets-rep" name="attr_otherfeetabilitymod" style="width:45px;" value="1" disabled="true"></td>
-          <td class="sheet-table-data-center-sm">Wert:&nbsp;&nbsp;&nbsp;&nbsp;
-             <select class="sheet-table-data-center-feets-rep" style="height: 24px; width: 50px; font-size: 0.75em;" name="attr_otherfeetranksroll" title="Ability used for feet">
-                   <option type="number" style="width: 45px;" value="0">0</option>
-                   <option type="number" style="width: 45px;" value="1">1</option>
-                   <option type="number" style="width: 45px;" value="2">2</option>
-                   <option type="number" style="width: 45px;" value="3">3</option>
-                   <option type="number" style="width: 45px;" value="4">4</option>
-                   <option type="number" style="width: 45px;" value="5">5</option>
-                   <option type="number" style="width: 45px;" value="6">6</option>
-             </select>
-          </td>
-          <td class="sheet-table-data-center-sm">Stufe:&nbsp;&nbsp;&nbsp;&nbsp;
-             <select class="sheet-table-data-center-feets-rep" style="height: 24px; width: 50px; font-size: 0.75em;" name="attr_otherfeetuseroll" title="Ability used for feet">
-                   <option type="number" style="width: 45px;" value="1">1</option>
-                   <option type="number" style="width: 45px;" value="2">2</option>
-                   <option type="number" style="width: 45px;" value="3">3</option>
-                   <option type="number" style="width: 45px;" value="4">4</option>
-                   <option type="number" style="width: 45px;" value="5">5</option>
-                   <option type="number" style="width: 45px;" value="6">6</option>
-             </select>
-          </td>
-          <td class="sheet-table-data-center-sm">Notizen:<textarea rows="1" cols="50" style="width: 140px; height: 20px;" class="sheet-table-data-center-feets-rep" name="attr_otherfeetnote" title="otherfeetnote (Notizen zur Angabe von weiteren Informationen beim Würfeln)" placeholder="Notes"></textarea></td>
-          <td class="sheet-table-data-center-sm">Aktion:<textarea rows="1" cols="50" style="width: 140px; height: 20px;" class="sheet-table-data-center-feets-rep" name="attr_otherfeetnote2" title="otherfeetnote2 (Ausführende Aktion hier eintragen.)" placeholder="Performed Action"></textarea></td>
-          <td class="sheet-table-data-center-sm">Makro:</td>
-       </tr>		
-    </tbody>
- </table>  
- <table>
-    <tr>
-        <td><b>Gegenmaßnahmen:</b>&nbsp;&nbsp;&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;</td><td><input type='checkbox' name='attr_chk_anti1' value='1' title="Ausweichbar"/>&nbsp;&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;</td><td><input type='checkbox' name='attr_chk_anti2' value='1' title="Widerstehbar"/>&nbsp;&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;</td><td><input type='checkbox' name='attr_chk_anti3' value='1' title="Parierbar"/>&nbsp;&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;</td><td><input type='checkbox' name='attr_chk_anti4' value='1' title="Konterbar"/>&nbsp;&nbsp;</td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;</td><td><input type='checkbox' name='attr_chk_anti5' value='1' title="Unaufhaltbar"/>&nbsp;&nbsp;</td>
-    </tr>
- </table>   
- </div>  
- </fieldset>
+			<tr>
+				<td class="sheet-table-header-left">
+					Skillname:&nbsp;<input
+						type="text"
+						class="sheet-table-data-center-feets-rep"
+						name="attr_otherfeetname"
+						style="width: 145px"
+						title="feet name"
+					/>
+				</td>
+				<td>
+					Typus:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select
+						class="sheet-table-data-center-sm"
+						style="height: 24px; width: 80px; font-size: 0.75em"
+						class="sheet-table-data-center-feets-rep"
+						name="attr_otherfeetstat"
+						title="Ability used for feet"
+					>
+						<option type="text" style="width: 45px" value="1" selected>Magie</option>
+						<option type="text" style="width: 45px" value="1">Glaube</option>
+						<option type="text" style="width: 45px" value="1">Chakra</option>
+					</select>
+				</td>
+				<td class="sheet-table-data-center-sm">
+					Diff:<input
+						type="text"
+						class="sheet-table-data-center-feets-rep"
+						name="attr_otherfeetabilitymod"
+						style="width: 45px"
+						value="1"
+						disabled="true"
+					/>
+				</td>
+				<td class="sheet-table-data-center-sm">
+					Wert:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select
+						class="sheet-table-data-center-feets-rep"
+						style="height: 24px; width: 50px; font-size: 0.75em"
+						name="attr_otherfeetranksroll"
+						title="Ability used for feet"
+					>
+						<option type="number" style="width: 45px" value="0">0</option>
+						<option type="number" style="width: 45px" value="1">1</option>
+						<option type="number" style="width: 45px" value="2">2</option>
+						<option type="number" style="width: 45px" value="3">3</option>
+						<option type="number" style="width: 45px" value="4">4</option>
+						<option type="number" style="width: 45px" value="5">5</option>
+						<option type="number" style="width: 45px" value="6">6</option>
+					</select>
+				</td>
+				<td class="sheet-table-data-center-sm">
+					Stufe:&nbsp;&nbsp;&nbsp;&nbsp;
+					<select
+						class="sheet-table-data-center-feets-rep"
+						style="height: 24px; width: 50px; font-size: 0.75em"
+						name="attr_otherfeetuseroll"
+						title="Ability used for feet"
+					>
+						<option type="number" style="width: 45px" value="1">1</option>
+						<option type="number" style="width: 45px" value="2">2</option>
+						<option type="number" style="width: 45px" value="3">3</option>
+						<option type="number" style="width: 45px" value="4">4</option>
+						<option type="number" style="width: 45px" value="5">5</option>
+						<option type="number" style="width: 45px" value="6">6</option>
+					</select>
+				</td>
+				<td class="sheet-table-data-center-sm">
+					Notizen:<textarea
+						rows="1"
+						cols="50"
+						style="width: 140px; height: 20px"
+						class="sheet-table-data-center-feets-rep"
+						name="attr_otherfeetnote"
+						title="otherfeetnote (Notizen zur Angabe von weiteren Informationen beim Würfeln)"
+						placeholder="Notes"
+					></textarea>
+				</td>
+				<td class="sheet-table-data-center-sm">
+					Aktion:<textarea
+						rows="1"
+						cols="50"
+						style="width: 140px; height: 20px"
+						class="sheet-table-data-center-feets-rep"
+						name="attr_otherfeetnote2"
+						title="otherfeetnote2 (Ausführende Aktion hier eintragen.)"
+						placeholder="Performed Action"
+					></textarea>
+				</td>
+				<td class="sheet-table-data-center-sm">Makro:</td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<tr>
+			<td><b>Gegenmaßnahmen:</b>&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;</td>
+			<td><input type="checkbox" name="attr_chk_anti1" value="1" title="Ausweichbar" />&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;</td>
+			<td><input type="checkbox" name="attr_chk_anti2" value="1" title="Widerstehbar" />&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;</td>
+			<td><input type="checkbox" name="attr_chk_anti3" value="1" title="Parierbar" />&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;</td>
+			<td><input type="checkbox" name="attr_chk_anti4" value="1" title="Konterbar" />&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;</td>
+			<td><input type="checkbox" name="attr_chk_anti5" value="1" title="Unaufhaltbar" />&nbsp;&nbsp;</td>
+		</tr>
+	</table>
+</div>
+<div class="section-body">
+	<ol class="skills-list item-list">
+		{{#each skills as |skill skillId|}}
+			<div class="item skill flexrow" data-item-id="{{skill._id}}">
+				<span>{{skill.name}}</span>
+				<span class="item-delete delete"><i class="fas fa-trash"></i></span>
+			</div>
+		{{/each}}
+	</ol>
+</div>
