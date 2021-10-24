@@ -2,7 +2,16 @@
 
     {{!-- Character Header Stats - Start --}}
     <div class="header personal">
-        <h1>Charakterdaten</h1>
+        <h1>
+            <span class="label h1Left" align="left" style="text-align: left;">Charakterdaten</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="label h1-right" align="right" style="text-align: right;">Stufe 1</span>
+        </h1>
     </div>
     {{!-- Character Header Stats - End --}}
     
@@ -18,22 +27,27 @@
                     <img class="charimg profile" src="{{actor.img}}" title="{{actor.name}}" height="110" width="110" data-edit="img">
                 </td>
                 <td>
-                    <div class="charname item">
-                    <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name" />
-                    <span class="label name">&nbsp;Name</span>
+                    <div class="charname item" align="center"><br>
+                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name" /><br>
+                        <span class="label name">&nbsp;Charaktername</span><br><br>
+                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="Spielername" placeholder="Spielername" /><br>
+                        <span class="label name">&nbsp;Spielername</span><br>&nbsp;
                     </div>
                 </td>
                 <td>
-                    <div class="item">
-                        <input class="input species" style="box-shadow: none !important;" type="text" value="Spezies" placeholder="Spezies" />
-                        <span class="label species">&nbsp;Spezies</span>
+                    <div class="item" align="center"><br>
+                        <input class="input species" style="box-shadow: none !important;" type="text" value="Spezies" placeholder="Spezies" /><br>
+                        <span class="label species">&nbsp;Spezies</span><br><br>
+                        <input class="input species" style="box-shadow: none !important;" type="text" value="Pfad/Konzept" placeholder="Pfad/Konzept" /><br>
+                        <span class="label species">&nbsp;Pfad/Konzept</span><br>&nbsp;
                     </div>
                 </td>
                 <td>
-
-                    <div id="field-class" class="item">
-                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="Klasse" placeholder="Klasse" />
-                        <span class="label class">&nbsp;Klasse</span>
+                    <div id="field-class" class="item" align="center"><br>
+                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="Klasse" placeholder="Klasse" /><br>
+                        <span class="label class">&nbsp;Klasse</span><br><br>
+                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="0" placeholder="Pfadpunkte" /><br>
+                        <span class="label class">&nbsp;Pfadpunkte</span><br>&nbsp;
                     </div>
                 </td>
             </tr>

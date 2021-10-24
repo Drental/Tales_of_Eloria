@@ -6,7 +6,9 @@ export default class toeloriaCharSheet extends ActorSheet {
         tabs: [{navSelector: ".tabs", contentSelector: ".sheet-body", initial: "stats"}]   
         });
     };
+
     activateListeners(html) {
+        super.activateListeners(html);
         if ( this.isEditable ) {
             html.find('[data-toe-roll], [data-toe-ability]').on("click", this._rollAbilityCheck.bind(this));
         }

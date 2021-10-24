@@ -1,1 +1,100 @@
-Stats
+<label style="width: 150px; color: rgb(0, 0, 0); text-align: center;">Attribut Bereich</label>
+<table class="attribute_center" border="2">
+   <tbody>
+      <tr>
+         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Attribut</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Attribut</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+         <th nowrap colspan="2" style="width: 150px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Attribut</label></th>
+         <th nowrap style="width: 60px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Wert</label></th>
+         <th nowrap style="width: 50px;"><label class="sheet-table-header" style="width: 150px; text-align:center; color: rgb(0, 0, 0);">Makro</label></th>
+      </tr>
+      <tr style="width: 120px;">
+         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Körperliche Attribute</td>
+      </tr> 
+      <tr style="width: 150px;">
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Körperkraft</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Körperkraft-Wert" value="{{data.data.Strength.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Geschicklichkeit</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Dexterity_value" style="width:35px; text-align:center;" title="Geschicklichkeit-Wert" value="{{data.data.Dexterity.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Dexterity" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Reflexe & Sinne</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Reflexe & Sinne-Wert" value="{{data.data.Perception.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Perception" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Geistige Attribute</td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Verstand</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Mind_value" style="width:35px; text-align:center;" title="Verstand-Wert" value="{{data.data.Mind.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Mind" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Seelenkraft</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Soul_value" style="width:35px; text-align:center;" title="Seelenkraft-Wert" value="{{data.data.Soul.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Soul" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Askese</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Spirit_value" style="width:35px; text-align:center;" title="Askese-Wert" value="{{data.data.Spirit.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Spirit" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Soziale Attribute</td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Charisma</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Charisma_value" style="width:35px; text-align:center;" title="Charisma-Wert" value="{{data.data.Charisma.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Charisma" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Manipulation</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Manipulation_value" style="width:35px; text-align:center;" title="Manipulation-Wert" value="{{data.data.Manipulation.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Interaktion</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Interaction_value" style="width:35px; text-align:center;" title="Interaktion-Wert" value="{{data.data.Interaction.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Interaction" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+      <tr style="width: 120px;">
+         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Metaphysische Attribute</td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Intuition</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Intuition-Wert" value="{{data.data.Intuition.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Gefahrensinn</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Gefahrensinn-Wert" value="{{data.data.SenseOfDanger.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Kosmos-Einklang</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Kosmoseinklang-Wert" value="{{data.data.CosmosConsistent.value}}"></td>
+         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
+      </tr>
+   </tbody>
+</table>
+
+"name": "Erfahrungspunte aktuell",
+"name": "Erfahrungspunte gesamt",
+"name": "Essenzpunte aktuell",
+"name": "Essenzpunte gesamt",
+"name": "Kosmospunte aktuell",
+"name": "Kosmospunte gesamt",
+
+"name": "Alter",
+"name": "Geschlecht",
+"name": "Grösse",
+"name": "Gewicht",
+"name": "Augenfarbe",
+"name": "Haarfarbe",
+"name": "Herkunft",
+"name": "Glaube",

@@ -5,54 +5,54 @@
 			"mainattributes":{
 				"Strength": {
 					"name": "Körperkraft",
-					"value": 0
+					"value": 1
 				},
 				"Dexterity": {
 					"name": "Geschicklichkeit",
-					"value": 0
+					"value": 1
 				},
 				"Perception": {
 					"name": "Reflexe & Sinne",
-					"value": 0
+					"value": 1
 				},
-				
+
 				"Mind": {
 					"name": "Verstand",
-					"value": 0
+					"value": 1
 				},
 				"Soul": {
 					"name": "Seelenkraft",
-					"value": 0
+					"value": 1
 				},
 				"Spirit": {
 					"name": "Spiritualität",
-					"value": 0
+					"value": 1
 				},
 				
 				"Charisma": {
 					"name": "Charisma",
-					"value": 0
+					"value": 1
 				},
 				"Manipulation": {
 					"name": "Manipulation",
-					"value": 0
+					"value": 1
 				},
 				"Interaction": {
 					"name": "Interaktion",
-					"value": 0
+					"value": 1
 				},
 				
 				"Intuition": {
 					"name": "Intuition",
-					"value": 0
+					"value": 1
 				},
 				"SenseOfDanger": {
 					"name": "Gefahrensinn",
-					"value": 0
+					"value": 1
 				},
 				"CosmosConsistent": {
 					"name": "Kosmos-Einklang",
-					"value": 0
+					"value": 1
 				}
 			},
 			"subattributes":{
@@ -192,8 +192,8 @@
 				"birthplace": "",
 				"age": 0,
 				"height": 0,
-				"hairColor": "",
 				"weight": 0,
+				"hairColor": "",
 				"eyeColor": ""
 			}
 		},
@@ -244,7 +244,7 @@
 		}			
 	},
 	"Item":{
-		"types": ["Waffen",	"Skills"],
+		"types": ["Waffen",	"Skills", "Gegenstände"],
 		"templates": {
 			"mainstats":{
 				"Type": {
@@ -288,6 +288,11 @@
 			]				
 		},
 		"Skills":{
+			"templates": [
+				"skill_stats"
+			]
+		},
+		"Gegenstände":{
 			"templates": [
 				"skill_stats"
 			]
