@@ -10,7 +10,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="label h1-right" align="right" style="text-align: right;">Stufe 1</span>
+            <span class="label h1-right" align="right" style="text-align: right;">Stufe {{actor.data.CharLevel.value}}</span>
         </h1>
     </div>
     {{!-- Character Header Stats - End --}}
@@ -28,25 +28,25 @@
                 </td>
                 <td>
                     <div class="charname item" align="center"><br>
-                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" placeholder="Charakter Name"/>
+                        <input class="input name" style="box-shadow: none !important;" name="name" type="text" value="{{actor.name}}" />
                         <span class="label">&nbsp;Charaktername</span><br><br>
-                        <input class="input" style="box-shadow: none !important;" name="data.PlayerName.name" type="text" value="{{actor.data.PlayerName.name}}" placeholder="Spielername" /><br>
+                        <input class="input" style="box-shadow: none !important;" name="data.PlayerName.name" type="text" value="{{actor.data.PlayerName.name}}" /><br>
                         <span class="label">&nbsp;Spielername</span><br>&nbsp;
                     </div>
                 </td>
                 <td>
                     <div class="item" align="center"><br>
-                        <input class="input species" style="box-shadow: none !important;" type="text" value="Spezies" placeholder="Spezies" /><br>
+                        <input class="input species" style="box-shadow: none !important;" type="text" value="{{actor.data.Species.value}}" /><br>
                         <span class="label species">&nbsp;Spezies</span><br><br>
-                        <input class="input species" style="box-shadow: none !important;" type="text" value="Pfad/Konzept" placeholder="Pfad/Konzept" /><br>
+                        <input class="input species" style="box-shadow: none !important;" type="text" value="{{actor.data.PathConcept.value}}" /><br>
                         <span class="label species">&nbsp;Pfad/Konzept</span><br>&nbsp;
                     </div>
                 </td>
                 <td>
                     <div id="field-class" class="item" align="center"><br>
-                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="Klasse" placeholder="Klasse" /><br>
+                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="{{actor.data.Class.value}}" /><br>
                         <span class="label class">&nbsp;Klasse</span><br><br>
-                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="0" placeholder="Pfadpunkte" /><br>
+                        <input class="input class" style="box-shadow: none !important;" name="data.details.class.value" type="text" value="{{actor.data.PathPoints.value}}" /><br>
                         <span class="label class">&nbsp;Pfadpunkte</span><br>&nbsp;
                     </div>
                 </td>
@@ -59,13 +59,13 @@
 
     {{!-- Character Sheet Navigation --}}
     <nav class="sheet-navigation tabs" data-group="primary">
-		<a class="item active" data-tab="stats">Status</a>
+        <a class="item active" data-tab="biography">Biographie</a>
+		<a class="item" data-tab="stats">Status</a>
         <a class="item" data-tab="attributes">Attribute</a>
         <a class="item" data-tab="features">Fertigkeiten</a>
         <a class="item" data-tab="spellbook">Buch der Gaben</a>
         <a class="item" data-tab="inventory">Inventar</a>
         <a class="item" data-tab="notes">Notizen</a>
-        <a class="item" data-tab="biography">Biographie</a>
     </nav>
     
     <hr>

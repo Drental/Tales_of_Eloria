@@ -14,8 +14,8 @@
       </tr>
       <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(255, 0, 0);">Nahkampf</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Melee_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Beschreibt die allgemeine Fertigkeit im Kampf - Mann gegen Mann">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Melee_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="{{actor.data.Melee.value}}"></td>
         <td nowrap align="center"></td>
         <td nowrap align="center" style="border-right: 1px;"></td>
         <td nowrap align="center" style="border-left: 1px;"></td>
@@ -28,40 +28,40 @@
    </tr>
     <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Waffenlos</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Waffenlos-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten im Kampf ohne Waffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Unarmed_value" style="width:35px; text-align:center;" title="Waffenlos-Wert" value="{{actor.data.Unarmed.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Hiebwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Dexterity_value" style="width:35px; text-align:center;" title="Hiebwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit stumpfen Waffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="CuttingWeapons_value" style="width:35px; text-align:center;" title="Hiebwaffen-Wert" value="{{actor.data.CuttingWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Dexterity" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Klingenwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Klingenwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit scharfen Waffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="BladedWeapons_value" style="width:35px; text-align:center;" title="Klingenwaffen-Wert" value="{{actor.data.BladedWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Perception" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Fechtwaffen</label></td>
-            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Mind_value" style="width:35px; text-align:center;" title="Fechtwaffen-Wert" value="0"></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit spitzen Stichwaffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="FencingWeapons_value" style="width:35px; text-align:center;" title="Fechtwaffen-Wert" value="{{actor.data.FencingWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Mind" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Kettenwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Soul_value" style="width:35px; text-align:center;" title="Kettenwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Waffen basierent auf Ketten oder Gliedern">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="ChainWeapons_value" style="width:35px; text-align:center;" title="Kettenwaffen-Wert" value="{{actor.data.ChainWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Soul" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Langwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Spirit_value" style="width:35px; text-align:center;" title="Langwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Reichweitenwaffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="LongarmWeapons_value" style="width:35px; text-align:center;" title="Langwaffen-Wert" value="{{actor.data.LongarmWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Spirit" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Peitschenwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Charisma_value" style="width:35px; text-align:center;" title="Peitschenwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Riemenwaffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="WhipWeapons_value" style="width:35px; text-align:center;" title="Peitschenwaffen-Wert" value="{{actor.data.WhipWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Charisma" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Exotische Waffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Manipulation_value" style="width:35px; text-align:center;" title="Exotische Waffen-Wert" value="0">&nbsp;</td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Waffen seltener und unbekannter Art">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="ExoticWeapons_value" style="width:35px; text-align:center;" title="Exotische Waffen-Wert" value="{{actor.data.ExoticWeapons.value}}">&nbsp;</td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"></td>
          <td nowrap align="center" style="border-left: 1px;"></td>
@@ -73,8 +73,8 @@
       </tr>
       <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(255, 0, 0);">Fernampf</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Beschreibt die allgemeine Fertigkeit im Kampf - Aus der Distanz">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="RangedCombat_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="{{actor.data.RangedCombat.value}}"></td>
         <td nowrap align="center"></td>
         <td nowrap align="center" style="border-right: 1px;"></td>
         <td nowrap align="center" style="border-left: 1px;"></td>
@@ -87,30 +87,30 @@
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Blasrohr</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Blasrohr-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit atembetriebenen Röhrenwaffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Blowpipes_value" style="width:35px; text-align:center;" title="Blasrohr-Wert" value="{{actor.data.Blowpipes.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Wurfwaffen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Wurfwaffen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit zu werfende Waffen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="ThrowingWeapons_value" style="width:35px; text-align:center;" title="Wurfwaffen-Wert" value="{{actor.data.ThrowingWeapons.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Bogen & Armbrust</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Bogen & Armbrust-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Armburst und Bogen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="BowNCrossbow_value" style="width:35px; text-align:center;" title="Bogen & Armbrust-Wert" value="{{actor.data.BowNCrossbow.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Pistolen & Revolver</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Pistolen & Revolver-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Pistolen oder Revolvern">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="PistolsNRevolvers_value" style="width:35px; text-align:center;" title="Pistolen & Revolver-Wert" value="{{actor.data.PistolsNRevolvers.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Gewehre & Flinten</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Gewehre & Flinten-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Gewehren und Flinten">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="RiflesNShotguns_value" style="width:35px; text-align:center;" title="Gewehre & Flinten-Wert" value="{{actor.data.RiflesNShotguns.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Dampfdruckwaffen</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Dampfdruckwaffen-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Kampffertigkeiten mit Waffen, welche mit Dampfdruck betrieben werden">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="PressureGuns_value" style="width:35px; text-align:center;" title="Dampfdruckwaffen-Wert" value="{{actor.data.PressureGuns.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
      </tr>
   </tbody>
@@ -134,44 +134,44 @@
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Durchhaltevermögen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Strength_value" style="width:35px; text-align:center;" title="Durchhaltevermögen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, in kraftraubenden Aktionen lange durchzuhalten">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Perseverance_value" style="width:35px; text-align:center;" title="Durchhaltevermögen-Wert" value="{{actor.data.Perseverance.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Strength" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Standhaftigkeit</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Dexterity_value" style="width:35px; text-align:center;" title="Standhaftigkeit-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, selbst bei einem körperlichen Kollaps nicht bewusstlos zu werden">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Steadfastness_value" style="width:35px; text-align:center;" title="Standhaftigkeit-Wert" value="{{actor.data.Steadfastness.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Dexterity" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Willensstärke</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Willensstärke" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sich mental gegen psychische Beeinflussung zu wehren">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Willpower_value" style="width:35px; text-align:center;" title="Willensstärke" value="{{actor.data.Willpower.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Perception" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Schwimmen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Mind_value" style="width:35px; text-align:center;" title="Schwimmen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sich im Wasser zu bewegen ohne ungewollt unterzugehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Swimming_value" style="width:35px; text-align:center;" title="Schwimmen-Wert" value="{{actor.data.Swimming.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Mind" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Klettern</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Soul_value" style="width:35px; text-align:center;" title="Klettern-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, Hindernisse zu überwinden welche vertikal zu erklimmen sind">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Climbing_value" style="width:35px; text-align:center;" title="Klettern-Wert" value="{{actor.data.Climbing.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Soul" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Kraftakt</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Spirit_value" style="width:35px; text-align:center;" title="Kraftakt" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, die körperliche Kraft auf oder gegen ein Ziel zu lenken">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="ActOfStrength_value" style="width:35px; text-align:center;" title="Kraftakt" value="{{actor.data.ActOfStrength.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Spirit" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Verhandeln</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Charisma_value" style="width:35px; text-align:center;" title="Verhandeln-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, seinen Gegenüber von einem besseren Deal zu überzeugen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Negotiate_value" style="width:35px; text-align:center;" title="Verhandeln-Wert" value="{{actor.data.Negotiate.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Charisma" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Einschüchtern</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Manipulation_value" style="width:35px; text-align:center;" title="Einschüchtern-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, jemand Anderen Angst einzuflößen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Intimidate_value" style="width:35px; text-align:center;" title="Einschüchtern-Wert" value="{{actor.data.Intimidate.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Flirten</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Interaction_value" style="width:35px; text-align:center;" title="Flirten-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, einer Person gefühlsmäßig den Kopf zu verdrehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Flirtation_value" style="width:35px; text-align:center;" title="Flirten-Wert" value="{{actor.data.Flirtation.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Interaction" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
@@ -179,44 +179,44 @@
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Betrug</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Betrug-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, jemanden Anderen erfolgreich übers Ohr zu hauen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Deceive_value" style="width:35px; text-align:center;" title="Betrug-Wert" value="{{actor.data.Deceive.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Selbstbeherrschung</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Selbstbeherrschung-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sich nicht provozieren zu lassen und berechnend zu bleiben">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="SelfControl_value" style="width:35px; text-align:center;" title="Selbstbeherrschung-Wert" value="{{actor.data.SelfControl.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Empathie </label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Empathie -Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, die Gefühlswelt des anderen zu verstehen und sich hineinzuversetzen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Empathy_value" style="width:35px; text-align:center;" title="Empathie -Wert" value="{{actor.data.Empathy.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
      <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Astralsicht</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Astralsicht-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, in den astralen Raum zu blicken um dort mehr zu erkennen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="AstralSight_value" style="width:35px; text-align:center;" title="Astralsicht-Wert" value="{{actor.data.AstralSight.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Wahrnehmung</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Wahrnehmung-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sein Umfeld mit alles Sinnen wahrzunehmen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Perception_value" style="width:35px; text-align:center;" title="Wahrnehmung-Wert" value="{{actor.data.Perception.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Erinnerung</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Erinnerung-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit sich Geschehnisse aus der Vergangenheit wieder vor Augen zu führen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Remembering_value" style="width:35px; text-align:center;" title="Erinnerung-Wert" value="{{actor.data.Remembering.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
      </tr>
      <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Reiten & Lenken</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Reiten & Lenken-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, Kutschen, Boote oder anderes zu lenken und steuern">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="RidingSteering_value" style="width:35px; text-align:center;" title="Reiten & Lenken-Wert" value="{{actor.data.RidingSteering.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Akrobatik</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Akrobatik-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sich körperlich auf bizarre Weise zu bewegen und verbiegen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Acrobatics_value" style="width:35px; text-align:center;" title="Akrobatik-Wert" value="{{actor.data.Acrobatics.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Schleichen</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Schleichen-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, lautlos von Ort zu Ort zu bewegen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Sneaking_value" style="width:35px; text-align:center;" title="Schleichen-Wert" value="{{actor.data.Sneaking.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
      </tr>
     <tr style="width: 120px;">
@@ -224,44 +224,44 @@
       </tr>
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Fingerfertigkeit</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Fingerfertigkeit-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, geschickt mit den Fingern selbst filigrane Tätigkeiten zu vollziehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="SleightOfHand_value" style="width:35px; text-align:center;" title="Fingerfertigkeit-Wert" value="{{actor.data.SleightOfHand.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Allgemeinwissen</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Allgemeinwissen-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, die breite Masse an allgemeinem Wissen schnell abzurufen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="CommonKnowledge_value" style="width:35px; text-align:center;" title="Allgemeinwissen-Wert" value="{{actor.data.CommonKnowledge.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 180px; text-align:center; color: rgb(0, 0, 0);">Technik</label></td>
-         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Technik-Wert" value="0"></td>
+         <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, mit Maschinen jeglicher Art umzugehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap align="center"><input type="number" name="Technology_value" style="width:35px; text-align:center;" title="Technik-Wert" value="{{actor.data.Technology.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
       <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Orientierung</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Orientierung-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, sich in unbekannter Gegend zurecht zu finden">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Orientation_value" style="width:35px; text-align:center;" title="Orientierung-Wert" value="{{actor.data.Orientation.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Logisches Denken</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Logisches Denken-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, logische Schlüsse auf vorhandenem Wissen zu ziehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Reasoning_value" style="width:35px; text-align:center;" title="Logisches Denken-Wert" value="{{actor.data.Reasoning.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Improvisieren</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Improvisieren-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, nötiges Utensilien mit vorhanden Dingen zu ersetzen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Improvise_value" style="width:35px; text-align:center;" title="Improvisieren-Wert" value="{{actor.data.Improvise.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
      </tr>
      <tr style="width: 120px;">
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Singen</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="Intuition_value" style="width:35px; text-align:center;" title="Singen-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, seine Stimme melodisch einzusetzen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Singing_value" style="width:35px; text-align:center;" title="Singen-Wert" value="{{actor.data.Singing.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="Intuition" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Tanzen</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="SenseOfDanger_value" style="width:35px; text-align:center;" title="Tanzen-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, seinen Körper nach einem Takt oder Melodie zu bewegen.">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Dancing_value" style="width:35px; text-align:center;" title="Tanzen-Wert" value="{{actor.data.Dancing.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="SenseOfDanger" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Musizieren</label></td>
-        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-        <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Musiziereng-Wert" value="0"></td>
+        <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Fertigkeit, Musik auf einem Instrument zu erzeugen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+        <td nowrap align="center"><input type="number" name="Music_value" style="width:35px; text-align:center;" title="Musiziereng-Wert" value="{{actor.data.Music.value}}"></td>
         <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
      </tr>
  </tbody>

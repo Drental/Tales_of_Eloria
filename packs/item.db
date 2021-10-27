@@ -1,2 +1,4 @@
 {"name":"Feuerball","type":"Skills","img":"icons/svg/item-bag.svg","data":{"Skillname":{"name":"Skill Name","value":""},"Skill_roll":{"name":"Würfelwurf","value":""}},"effects":[],"folder":null,"sort":0,"permission":{"default":0,"oOvjGmVZjEoLTlAU":3},"flags":{"core":{"sourceId":"Item.FdE8jW2UdxNcNa3e"}},"_id":"BQ6TlCXfBDA2xHpz"}
 {"name":"dfash","type":"Skills","img":"icons/svg/item-bag.svg","data":{"Skillname":{"name":"Skill Name","value":""},"Skill_roll":{"name":"Würfelwurf","value":""}},"effects":[],"folder":null,"sort":0,"permission":{"default":0,"oOvjGmVZjEoLTlAU":3},"flags":{},"_id":"sMqqgnUgm6E79QwR"}
+{"$$deleted":true,"_id":"sMqqgnUgm6E79QwR"}
+{"$$deleted":true,"_id":"BQ6TlCXfBDA2xHpz"}

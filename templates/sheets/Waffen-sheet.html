@@ -3,7 +3,42 @@
 		<img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
 		<h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
 	</header>
-	<div class="sheet-content">
-		<p>Hallo ich bin eine Waffe!</p>
-	</div>
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="9" nowrap align="center"><span align="center" style="text-align: center;">Waffeninformationen:</span></th>
+			</tr>
+			<tr>
+				<td nowrap align="center">Name: </td>
+				<td nowrap align="center">Typus: </td>
+				<td nowrap align="center">Verzauberung: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><input name="Name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="text" value="{{actor.data.Type.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="EnchantValue" type="number" value="{{actor.data.EnchantValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
+			</tr>
+			<tr>
+				<td nowrap align="center">Schaden: </td>
+				<td nowrap align="center">Bonus: </td>
+				<td nowrap align="center">Kategorie: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><input name="Damage" type="number" value="{{actor.data.Damage.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Bonus" type="number" value="{{actor.data.CategoryValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Category" type="text" value="{{actor.data.Category.value}}" placeholder="{{ localize 'Name' }}" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<tbody>
+			<tr>
+				<td nowrap align="center">Beschreibung: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><textarea style="width: 450px; height: 100px;" name="FeatDiscription" title="FeatDiscription" value="{{actor.data.ItemDiscription.value}}" placeholder="{{ localize 'Name' }}"></textarea></td>				
+			</tr>
+		</tbody>
+	</table>
 </form>

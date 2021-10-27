@@ -37,8 +37,8 @@
 					"name": "Manipulation",
 					"value": 1
 				},
-				"Interaction": {
-					"name": "Interaktion",
+				"Diplomacy": {
+					"name": "Diplomatie",
 					"value": 1
 				},
 
@@ -81,16 +81,198 @@
 					"value": 0
 				}
 			},
+			"features": {
+				"Melee": {
+					"name": "Nahkampf",
+					"value": 0
+				},
+				"Unarmed": {
+					"name": "Waffenlos",
+					"value": 0
+				},
+				"CuttingWeapons": {
+					"name": "Hiebwaffen",
+					"value": 0
+				},
+				"BladedWeapons": {
+					"name": "Klingenwaffen",
+					"value": 0
+				},
+				"FencingWeapons": {
+					"name": "Fechtwaffen",
+					"value": 0
+				},
+				"ChainWeapons": {
+					"name": "Kettenwaffen",
+					"value": 0
+				},
+				"LongarmWeapons": {
+					"name": "Langwaffen",
+					"value": 0
+				},
+				"WhipWeapons": {
+					"name": "Peitschenwaffen",
+					"value": 0
+				},
+				"ExoticWeapons": {
+					"name": "Exotische Waffen",
+					"value": 0
+				},
+				"RangedCombat": {
+					"name": "Fernkampf",
+					"value": 0
+				},
+				"Blowpipes": {
+					"name": "Blasrohr",
+					"value": 0
+				},
+				"ThrowingWeapons": {
+					"name": "Wurfwaffen",
+					"value": 0
+				},
+				"BowNCrossbow": {
+					"name": "Bogen & Armbrust",
+					"value": 0
+				},
+				"PistolsNRevolvers": {
+					"name": "Pistolen & Revolver",
+					"value": 0
+				},
+				"RiflesNShotguns": {
+					"name": "Gewehre & Flinten",
+					"value": 0
+				},
+				"PressureGuns": {
+					"name": "Dampfdruckwaffen",
+					"value": 0
+				},
+				"Perseverance": {
+					"name": "Durchhaltevermögen",
+					"value": 0
+				},
+				"Steadfastness": {
+					"name": "Standhaftigkeit",
+					"value": 0
+				},
+				"Willpower": {
+					"name": "Willensstärke",
+					"value": 0
+				},
+				"Swimming": {
+					"name": "Schwimmen",
+					"value": 0
+				},
+				"Climbing": {
+					"name": "Klettern",
+					"value": 0
+				},
+				"ActOfStrength": {
+					"name": "Kraftakt",
+					"value": 0
+				},
+				"Negotiate": {
+					"name": "Verhandeln",
+					"value": 0
+				},
+				"Intimidate": {
+					"name": "Einschüchtern",
+					"value": 0
+				},
+				"Flirtation": {
+					"name": "Flirten",
+					"value": 0
+				},
+				"Deceive": {
+					"name": "Betrug",
+					"value": 0
+				},
+				"SelfControl": {
+					"name": "Selbstbeherrschung",
+					"value": 0
+				},
+				"AstralSight": {
+					"name": "Astralsicht",
+					"value": 0
+				},
+				"Perception": {
+					"name": "Wahrnehmung",
+					"value": 0
+				},
+				"Empathy": {
+					"name": "Empathie",
+					"value": 0
+				},
+				"Remembering": {
+					"name": "Erinnerung",
+					"value": 0
+				},
+				"RidingSteering": {
+					"name": "Reiten/Lenken",
+					"value": 0
+				},
+				"Acrobatics": {
+					"name": "Akrobatik",
+					"value": 0
+				},
+				"Sneaking": {
+					"name": "Schleichen",
+					"value": 0
+				},
+				"SleightOfHand": {
+					"name": "Fingerfertigkeit",
+					"value": 0
+				},
+				"CommonKnowledge": {
+					"name": "Allgemeinwissen",
+					"value": 0
+				},
+				"Technology": {
+					"name": "Technik",
+					"value": 0
+				},
+				"Orientation": {
+					"name": "Orientierung",
+					"value": 0
+				},
+				"Reasoning": {
+					"name": "Logisches Denken",
+					"value": 0
+				},
+				"Improvise": {
+					"name": "Improvisieren",
+					"value": 0
+				},
+				"Singing": {
+					"name": "Singen",
+					"value": 0
+				},
+				"Dancing": {
+					"name": "Tanzen",
+					"value": 0
+				},
+				"Music": {
+					"name": "Musizieren",
+					"value": 0
+				}
+			},
 			"charinfos_1": {
 				"CharName": {
-					"name": "Charaktername"
+					"name": "{{actor.name}}"
 				},
 				"PlayerName": {
-					"name": "Spielername"
+					"name": ""
 				},
 				"CharLevel": {
 					"name": "Charakterstufe",
-					"value": 0
+					"value": 1
+				},
+				"Species":{
+					"name": "",
+					"value": ""
+				},
+				"Class":{
+					"name": "",
+					"value": ""
 				}
 			},
 			"charinfos_2": {
@@ -112,11 +294,11 @@
 				},
 				"CP": {
 					"name": "Kosmospunte aktuell",
-					"value": 0
+					"value": 1
 				},
 				"CPcom": {
 					"name": "Kosmospunte gesamt",
-					"value": 0
+					"value": 1
 				}
 			},
 			"charinfos_3": {
@@ -126,7 +308,7 @@
 				},
 				"Sex": {
 					"name": "Geschlecht",
-					"value": 0
+					"value": ""
 				},
 				"Height": {
 					"name": "Grösse",
@@ -138,29 +320,29 @@
 				},
 				"Eyecolor": {
 					"name": "Augenfarbe",
-					"value": 0
+					"value": ""
 				},
 				"Haircolor": {
 					"name": "Haarfarbe",
-					"value": 0
+					"value": ""
 				},
 				"Being": {
 					"name": "Wesen",
-					"value": 0
+					"value": ""
 				},
 				"Origin": {
 					"name": "Herkunft",
-					"value": 0
+					"value": ""
 				},
 				"Faith": {
 					"name": "Glaube",
-					"value": 0
+					"value": ""
 				}
 			},
 			"charinfos_4": {
 				"PathConcept": {
 					"name": "Pfad/Konzept",
-					"value": 0
+					"value": "Jäger"
 				},
 				"PathPoints": {
 					"name": "Pfadpunkte",
@@ -168,37 +350,31 @@
 				}
 			},
 			"equipment": {
-				"Equipment": {
-					"name": "Equipment",
+				"Loot": {
+					"name": "Loot",
 					"value": ""
 				},
-				"Credits": {
+				"Cash": {
 					"name": "Geld",
-					"value": ""
-				},
-				"MaritsAndFlaws": {
-					"name": "Vorteile&Nachteile",
-					"value": ""
+					"poki": 100,
+					"naki": 0,
+					"jads": 0,
+					"gaps": 0,
+					"riel": 0,
+					"kehl": 0
 				}
 			},
 			"profile": {
 				"biography": {
 					"value": ""
-				},
-				"gender": "",
-				"birthday": "",
-				"birthplace": "",
-				"age": 0,
-				"height": 0,
-				"weight": 0,
-				"hairColor": "",
-				"eyeColor": ""
+				}
 			}
 		},
 		"Charakter": {
 			"templates": [
 				"mainattributes",
 				"subattributes",
+				"features",
 				"charinfos_1",
 				"charinfos_2",
 				"charinfos_3",
@@ -208,32 +384,40 @@
 			]
 		},
 		"NPC": {
-			"templates": ["mainattributes", "subattributes", "charinfos_1", "equipment"]
+			"templates": ["mainattributes", "subattributes", "features", "charinfos_1", "equipment"]
 		},
 		"Elite": {
-			"templates": ["mainattributes", "subattributes", "charinfos_1", "charinfos_3", "equipment"]
+			"templates": ["mainattributes", "subattributes", "features", "charinfos_1", "charinfos_3", "equipment"]
 		},
 		"Boss": {
-			"templates": ["mainattributes", "subattributes", "charinfos_1", "charinfos_3", "charinfos_4", "equipment"]
+			"templates": ["mainattributes", "subattributes", "features", "charinfos_1", "charinfos_3", "charinfos_4", "equipment"]
 		},
 		"Token": {
 			"templates": ["charinfos_1", "profile"]
 		}
 	},
 	"Item": {
-		"types": ["Waffen", "Skills", "Gegenstände"],
+		"types": ["Waffen", "Fertigkeiten", "Skills", "Items"],
 		"templates": {
 			"mainstats": {
 				"Type": {
 					"name": "Waffenart",
 					"value": ""
 				},
+				"EnchantValue": {
+					"name": "Verzauberung",
+					"value": 0
+				},
 				"Damage": {
 					"name": "Schaden",
 					"value": 0
 				},
-				"Hit_chance": {
-					"name": "Trefferchance",
+				"Category": {
+					"name": "",
+					"value": ""
+				},
+				"CategoryValue": {
+					"name": "",
 					"value": 0
 				}
 			},
@@ -247,25 +431,64 @@
 					"value": 0
 				}
 			},
-			"skill_stats": {
-				"Skillname": {
-					"name": "Skill Name",
+			"skillstats": {
+				"SkillTypus": {
+					"name": "Fähigkeitsattribut",
 					"value": ""
 				},
-				"Skill_roll": {
-					"name": "Würfelwurf",
-					"value": ""
+				"SkillDifficult": {
+					"name": "Wurfschwierigkeit",
+					"value": 12
+				},
+				"SkillValue": {
+					"name": "Fähigkeitswert",
+					"value": 0
+				},
+				"SkillUsage": {
+					"name": "Anwendungsstufe",
+					"value": 1
+				},
+				"Countermeasures": {
+					"name": "Gegenmaßnahmen",
+					"evade_value": false,
+					"resist_value": false,
+					"parry_value": false,
+					"counter_value": false,
+					"ultima_value": false
 				}
+			},
+			"featstats": {
+				"FeatTypus": {
+					"name": "Fertigkeitsattribut",
+					"value": ""
+				},
+				"FeatDiscription": {
+					"name": "Beschreibung",
+					"value": "Die Fertigkeit, "
+				},
+				"FeatValue": {
+					"name": "Beschreibung",
+					"value": 0
+				}
+			},
+			"iteminfo": {
+				"ItemDiscription": {
+					"name": "Beschreibung",
+					"value": ""
+				}			
 			}
 		},
 		"Waffen": {
-			"templates": ["mainstats", "firearms"]
+			"templates": ["mainstats", "firearms", "iteminfo"]
+		},
+		"Fertigkeiten": {
+			"templates": ["feat_stats", "iteminfo"]
 		},
 		"Skills": {
-			"templates": ["skill_stats"]
+			"templates": ["skill_stats", "iteminfo"]
 		},
-		"Gegenstände": {
-			"templates": ["skill_stats"]
+		"Items": {
+			"templates": ["iteminfo"]
 		}
 	}
 }

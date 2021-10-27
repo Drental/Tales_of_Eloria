@@ -3,5 +3,58 @@
 		<img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
 		<h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
 	</header>
-	<p>Hallo ich bin ein Skill!</p>
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="9" nowrap align="center"><span align="center" style="text-align: center;">Skillinformationen:</span></th>
+			</tr>
+			<tr>
+				<td nowrap align="center">Name: </td>
+				<td nowrap align="center">Typus: </td>
+				<td nowrap align="center">Diff: </td>
+				<td nowrap align="center">Wert: </td>
+				<td nowrap align="center">Stufe: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><input name="Name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="text" value="{{actor.data.SkillTypus.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Difficult" type="number" value="{{actor.data.SkillDifficult.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="SkillValue" type="number" value="{{actor.data.SkillValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="SkillUsage" type="number" value="{{actor.data.SkillUsage.value}}" placeholder="{{ localize 'Name' }}" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="9" nowrap align="center"><span align="center" style="text-align: center;">Gegenmaßnahmen:</span></th>
+			</tr>
+			<tr>
+				<td nowrap align="center">Ausweichbar: </td>
+				<td nowrap align="center">Widerstehbar: </td>
+				<td nowrap align="center">Parierbar: </td>
+				<td nowrap align="center">Konterbar: </td>
+				<td nowrap align="center">Unaufhaltbar: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.evade_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.resist_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.parry_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.counter_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.ultima_value}}" placeholder="{{ localize 'Name' }}" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<tbody>
+			<tr>
+				<td nowrap align="center">Beschreibung: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><textarea style="width: 450px; height: 100px;" name="ItemDiscription" title="ItemDiscription" value="{{actor.data.ItemDiscription.value}}" placeholder="{{ localize 'Name' }}"></textarea></td>				
+			</tr>
+		</tbody>
+	</table>
 </form>

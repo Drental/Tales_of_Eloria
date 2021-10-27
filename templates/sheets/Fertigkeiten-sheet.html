@@ -1,0 +1,34 @@
+<form class="{{cssClass}}" autocomplete="off">
+	<header class="sheet-header">
+		<img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+		<h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
+	</header>
+	<br>
+	<table>
+		<tbody>
+			<tr>
+				<th colspan="9" nowrap align="center"><span align="center" style="text-align: center;">Fertigkeitsinformationen:</span></th>
+			</tr>
+			<tr>
+				<td nowrap align="center">Name: </td>
+				<td nowrap align="center">Attribut: </td>
+				<td nowrap align="center">Wert: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><input name="Name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="Typus" type="text" value="{{actor.data.FeatTypus.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input name="SkillValue" type="number" value="{{actor.data.FeatValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
+			</tr>
+		</tbody>
+	</table>
+	<table>
+		<tbody>
+			<tr>
+				<td nowrap align="center">Beschreibung: </td>
+			</tr>
+			<tr>
+				<td nowrap align="center"><textarea style="width: 450px; height: 100px;" name="FeatDiscription" title="FeatDiscription" value="{{actor.data.ItemDiscription.value}}" placeholder="{{ localize 'Name' }}"></textarea></td>				
+			</tr>
+		</tbody>
+	</table>
+</form>
