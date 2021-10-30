@@ -462,7 +462,7 @@
 		"types": ["Waffen", "Fertigkeiten", "Skills", "Items"],
 		"templates": {
 			"mainstats": {
-				"Type": {
+				"Typus": {
 					"name": "Waffenart",
 					"value": ""
 				},
@@ -538,16 +538,19 @@
 					"name": "Beschreibung",
 					"value": ""
 				}			
+			},
+			"formula": {
+				"formula": "1d12"
 			}
 		},
 		"Waffen": {
-			"templates": ["mainstats", "firearms", "iteminfo"]
+			"templates": ["mainstats", "firearms", "iteminfo", "formula"]
 		},
 		"Fertigkeiten": {
-			"templates": ["feat_stats", "iteminfo"]
+			"templates": ["featstats", "iteminfo", "formula"]
 		},
 		"Skills": {
-			"templates": ["skill_stats", "iteminfo"]
+			"templates": ["skillstats", "iteminfo", "formula"]
 		},
 		"Items": {
 			"templates": ["iteminfo"]

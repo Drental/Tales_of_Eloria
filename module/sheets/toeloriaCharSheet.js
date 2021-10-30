@@ -1,3 +1,5 @@
+import {attributeRoll} from '../helpers/dice.js'
+
 export default class toeloriaCharSheet extends ActorSheet {
 	static get defaultOptions() {
 		return mergeObject(super.defaultOptions, {
@@ -10,7 +12,7 @@ export default class toeloriaCharSheet extends ActorSheet {
 	activateListeners(html) {
 		super.activateListeners(html);
 		if (this.isEditable) {
-			html.find("[data-toe-roll], [data-toe-ability]").on("click", this._rollAbilityCheck.bind(this));
+			html.find(".rollable").on("click", this._onRoll.bind(this));
 			html.find(".item-delete").on("click", (event) => this.onClickDeleteItem(event));
 		}
 	}
@@ -29,30 +31,44 @@ export default class toeloriaCharSheet extends ActorSheet {
 		baseData.actor = actorData;
 		baseData.data = actorData.data;
 		const skills = actorData.items.filter((s) => s.type === "Skills")
+		const features = actorData.items.filter((s) => s.type === "Fertigkeiten")
 
 		return {
 			...baseData,
 			owners,
 			skills,
+			features,
 		};
 	}
 
-	async _rollAbilityCheck(event) {
+	async _onRoll(event) {
 		event.preventDefault();
-		const { toeRoll, toeAbility } = event.currentTarget.dataset;
-		let mod,
-			flavor = "";
-		flavor = this.actor.name + " würfelt";
-		if (toeAbility) {
-			console.log(this.actor.data);
-			if (this.actor.data.data[toeAbility]?.value !== undefined) {
-				mod = `+${this.actor.data.data[toeAbility].value}`;
-				flavor = flavor + ` auf ${this.actor.data.data[toeAbility]?.name}`;
+		const element = event.currentTarget;
+		const dataset = element.dataset;
+	
+		// Handle rolls.
+		if (dataset.rollType) {
+			if (dataset.rollType === 'item') {
+				const itemId = element.closest('.item').dataset.itemId;
+				const item = this.actor.items.get(itemId);
+				if (item) return item.roll();
+			} else if (dataset.rollType === "attribute") {
+				return attributeRoll( dataset.attribute, this.actor );  
 			}
 		}
-		const roll = new Roll(toeRoll + mod);
-		await roll.evaluate({ async: true });
-		roll.toMessage({ flavor });
+		// let mod,
+		// 	flavor = "";
+		// flavor = this.actor.name + " würfelt";
+		// if (toeAbility) {
+		// 	console.log(this.actor.data);
+		// 	if (this.actor.data.data[toeAbility]?.value !== undefined) {
+		// 		mod = `+${this.actor.data.data[toeAbility].value}`;
+		// 		flavor = flavor + ` auf ${this.actor.data.data[toeAbility]?.name}`;
+		// 	}
+		// }
+		// const roll = new Roll(toeRoll + mod);
+		// await roll.evaluate({ async: true });
+		// roll.toMessage({ flavor });
 	}
 
 	async onClickDeleteItem(event) {

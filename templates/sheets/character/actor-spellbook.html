@@ -21,9 +21,9 @@
 							<td nowrap align="center">
 								&nbsp;
 								<select
-									class="sheet-table-data-center-sm"
+									class=""
 									style="height: 24px; width: 80px; font-size: 0.75em"
-									class="sheet-table-data-center-feets-rep"
+									class=""
 									name="attr_otherfeetstat"
 									title="Ability used for feet"
 								>
@@ -32,20 +32,20 @@
 									<option type="text" style="width: 45px" value="1">Chakra</option>
 								</select>&nbsp;
 							</td>
-							<td nowrap align="center" class="sheet-table-data-center-sm">
+							<td nowrap align="center" class="">
 								&nbsp;<input
 									type="text"
-									class="sheet-table-data-center-feets-rep"
+									class=""
 									name="attr_otherfeetabilitymod"
 									style="width: 45px"
 									value="1"
 									disabled="true"
 								/>&nbsp;
 							</td>
-							<td nowrap align="center" class="sheet-table-data-center-sm">
+							<td nowrap align="center" class="">
 								&nbsp;
 								<select
-									class="sheet-table-data-center-feets-rep"
+									class=""
 									style="height: 24px; width: 50px; font-size: 0.75em"
 									name="attr_otherfeetranksroll"
 									title="Ability used for feet"
@@ -59,10 +59,10 @@
 									<option type="number" style="width: 45px" value="6">6</option>
 								</select>&nbsp;
 							</td>
-							<td nowrap align="center" class="sheet-table-data-center-sm">
+							<td nowrap align="center" class="">
 								&nbsp;
 								<select
-									class="sheet-table-data-center-feets-rep"
+									class=""
 									style="height: 24px; width: 50px; font-size: 0.75em"
 									name="attr_otherfeetuseroll"
 									title="Ability used for feet"
@@ -75,24 +75,24 @@
 									<option type="number" style="width: 45px" value="6">6</option>
 								</select>&nbsp;
 							</td>
-							<td nowrap align="center" class="sheet-table-data-center-sm">&nbsp;<button type="button" data-toe-roll="1d12" data-toe-ability="Manipulation" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button>&nbsp;</td>
+							<td nowrap align="center" class="rollable" data-roll-type="item">&nbsp;<button type="button" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button>&nbsp;</td>
 							<td nowrap align="center" ><span class="item-delete delete">&nbsp;<i class="fas fa-trash"></i>&nbsp;</span></td>
 						</tr>
 					</tbody>
 					<tbody>
 						<tr>
-							<td nowrap align="center">&nbsp;<b>Gegenmaßnahmen:</b>&nbsp;&nbsp;</td>
-							<td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td nowrap align="center"><input type="checkbox" name="attr_chk_anti1" value="1" title="Ausweichbar" /></td>
-							<td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;&nbsp;&nbsp;</td>
-							<td nowrap align="center"><input type="checkbox" name="attr_chk_anti2" value="1" title="Widerstehbar" /></td>
-							<td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td nowrap align="center"><input type="checkbox" name="attr_chk_anti3" value="1" title="Parierbar" /></td>
-							<td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td nowrap align="center"><input type="checkbox" name="attr_chk_anti4" value="1" title="Konterbar" /></td>
-							<td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-							<td nowrap align="center"><input type="checkbox" name="attr_chk_anti5" value="1" title="Unaufhaltbar" /></td>
-						</tr>
+                            <td nowrap align="center">&nbsp;<b>Gegenmaßnahmen:</b>&nbsp;&nbsp;</td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti1" value="{{data.data.Countermeasures.evade_value}}" title="Ausweichbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti2" value="{{data.data.Countermeasures.resist_value}}" title="Widerstehbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti3" value="{{data.data.Countermeasures.parry_value}}" title="Parierbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti4" value="{{data.data.Countermeasures.countervalue}}" title="Konterbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti5" value="{{data.data.Countermeasures.ultimavalue}}" title="Unaufhaltbar" /></td>
+                        </tr>
 					</tbody>
 				</table>
 			</div>
