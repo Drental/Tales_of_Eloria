@@ -86,13 +86,13 @@
       <tr style="width: 120px;">
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Entrinnen</label></td>
             <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Angriffen auszuweichen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap colspan="2" align="center"><input type="number" name="Evade_value" style="width:35px; text-align:center;" title="Entrinnen-Wert" value="{{data.data.Intuition.value}}"></td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Evade_value" style="width:35px; text-align:center;" title="Entrinnen-Wert" value="{{data.data.Evade.value}}"></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Abwehren</label></td>
             <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Angriffe ins Leere laufen zu lassen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap colspan="2" align="center"><input type="number" name="Thwart_value" style="width:35px; text-align:center;" title="Abwehr-Wert" value="{{data.data.SenseOfDanger.value}}"></td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Thwart_value" style="width:35px; text-align:center;" title="Abwehr-Wert" value="{{data.data.Thwart.value}}"></td>
          <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Aushalten</label></td>
             <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Schaden wegzustecken">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
-         <td nowrap colspan="2" align="center"><input type="number" name="Sustain_value" style="width:35px; text-align:center;" title="Aushalt-Wert" value="{{data.data.CosmosConsistent.value}}"></td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Sustain_value" style="width:35px; text-align:center;" title="Aushalt-Wert" value="{{data.data.Sustain.value}}"></td>
       </tr>
    </tbody>
 </table>
@@ -115,12 +115,12 @@
             <span style="width: 50px;" title="Die Anzahl an Metern/Feldern, die ein Charakter in einer Ini-Phase zurücklegen kann">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
       </tr>
       <tr style="width: 120px;">
-         <td nowrap align="center"><input type="number" name="Magicrounds_value" style="width:35px; text-align:center;" title="Magie-Runden" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Blessingrounds_value" style="width:35px; text-align:center;" title="Segens-Runden" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Askeserounds_value" style="width:35px; text-align:center;" title="Askese-Runden" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Actionsrounds_value" style="width:35px; text-align:center;" title="Aktions-Runden" value="0"></td>
-         <td nowrap align="center"><input type="number" name="IniBonus_value" style="width:35px; text-align:center;" title="Initiavive-Bonus" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Endurance_value" style="width:35px; text-align:center;" title="Ausdauer" value="0"></td>         
+         <td nowrap align="center"><input type="number" name="Magicrounds_value" style="width:35px; text-align:center;" title="Magie-Runden" value="{{data.data.MagicPower.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Blessingrounds_value" style="width:35px; text-align:center;" title="Segens-Runden" value="{{data.data.FaithPower.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Askeserounds_value" style="width:35px; text-align:center;" title="Askese-Runden" value="{{data.data.SpiritPower.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Actionsrounds_value" style="width:35px; text-align:center;" title="Aktions-Runden" value="{{data.data.MainPower.value}}"></td>
+         <td nowrap align="center"><input type="number" name="IniBonus_value" style="width:35px; text-align:center;" title="Initiavive-Bonus" value="{{data.data.Initiative.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Endurance_value" style="width:35px; text-align:center;" title="Ausdauer" value="{{data.data.Stamina.value}}"></td>         
       </tr>
    </tbody>
 </table>
@@ -143,12 +143,12 @@
             <span style="width: 50px;" title="Der Heilungsbasiswert, welcher sich aus der Konstitution errechnen lässt">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
       </tr>
       <tr style="width: 120px;">
-         <td nowrap align="center"><input type="number" name="LP_value" style="width:35px; text-align:center;" title="Lebenspunkte" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Damage_value" style="width:35px; text-align:center;" title="Schadenspunkte" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Penalty_value" style="width:35px; text-align:center;" title="Schadens-Malus" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Death_Threshold_value" style="width:35px; text-align:center;" title="Todesschwelle" value="0"></td>
-         <td nowrap align="center"><input type="number" name="ComaRound_value" style="width:35px; text-align:center;" title="Komarunden" value="0"></td>
-         <td nowrap align="center"><input type="number" name="HealBase_value" style="width:35px; text-align:center;" title="Heilungsmenge" value="0"></td>         
+         <td nowrap align="center"><input type="number" name="LP_value" style="width:35px; text-align:center;" title="Lebenspunkte" value="{{data.data.LP.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Damage_value" style="width:35px; text-align:center;" title="Schadenspunkte" value="{{data.data.Damage.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Penalty_value" style="width:35px; text-align:center;" title="Schadens-Malus" value="{{data.data.Penalty.value}}"></td>
+         <td nowrap align="center"><input type="number" name="DeathThreshold_value" style="width:35px; text-align:center;" title="Todesschwelle" value="{{data.data.DeathThreshold.value}}"></td>
+         <td nowrap align="center"><input type="number" name="ComaRounds_value" style="width:35px; text-align:center;" title="Komarunden" value="{{data.data.ComaRounds.value}}"></td>
+         <td nowrap align="center"><input type="number" name="HealBase_value" style="width:35px; text-align:center;" title="Heilungsmenge" value="{{data.data.HealBase.value}}"></td>         
       </tr>
    </tbody>
 </table>
@@ -171,12 +171,12 @@
             <span style="width: 50px;" title="Die Menge an Schaden die durch Rüstung abgehalten wird">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
       </tr>
       <tr style="width: 120px;">
-         <td nowrap align="center"><input type="number" name="Dodge_value" style="width:35px; text-align:center;" title="Ausweichen-Wert" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Parry_value" style="width:35px; text-align:center;" title="Parier-Wert" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Resist_value" style="width:35px; text-align:center;" title="Resistenz-Wert" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Melee_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="0"></td>
-         <td nowrap align="center"><input type="number" name="RangedCombat_value" style="width:35px; text-align:center;" title="Fernkampf-Wert" value="0"></td>
-         <td nowrap align="center"><input type="number" name="Amor_value" style="width:35px; text-align:center;" title="Rüst-Wert" value="0"></td>         
+         <td nowrap align="center"><input type="number" name="Dodge_value" style="width:35px; text-align:center;" title="Ausweichen-Wert" value="{{data.data.Dodge.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Parry_value" style="width:35px; text-align:center;" title="Parier-Wert" value="{{data.data.Parry.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Resist_value" style="width:35px; text-align:center;" title="Resistenz-Wert" value="{{data.data.Resist.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Melee_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="{{data.data.MeleeValue.value}}"></td>
+         <td nowrap align="center"><input type="number" name="RangedCombat_value" style="width:35px; text-align:center;" title="Fernkampf-Wert" value="{{data.data.RangedCombatValue.value}}"></td>
+         <td nowrap align="center"><input type="number" name="Amor_value" style="width:35px; text-align:center;" title="Rüst-Wert" value="{{data.data.Amor.value}}"></td>         
       </tr>
    </tbody>
 </table>

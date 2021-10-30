@@ -53,6 +53,18 @@
 				"CosmosConsistent": {
 					"name": "Kosmos-Einklang",
 					"value": 1
+				},
+				"Evade": {
+					"name": "Kosmos-Einklang",
+					"value": 1
+				},
+				"Thwart": {
+					"name": "Kosmos-Einklang",
+					"value": 1
+				},
+				"Sustain": {
+					"name": "Kosmos-Einklang",
+					"value": 1
 				}
 			},
 			"subattributes": {
@@ -78,6 +90,56 @@
 				},
 				"Stamina": {
 					"name": "Ausdauer",
+					"value": 0
+				},
+
+				"LP": {
+					"name": "Lebenspunkte",
+					"value": 0
+				},
+				"Damage": {
+					"name": "Schadenspunkte",
+					"value": 0
+				},
+				"Penalty": {
+					"name": "Schadens-Malus",
+					"value": 0
+				},
+				"DeathThreshold": {
+					"name": "Todesschwelle",
+					"value": 0
+				},
+				"ComaRounds": {
+					"name": "Komarunden",
+					"value": 0
+				},
+				"HealBase": {
+					"name": "Heilungsmenge",
+					"value": 0
+				},
+
+				"Dodge": {
+					"name": "Ausweichen",
+					"value": 0
+				},
+				"Parry": {
+					"name": "Parieren",
+					"value": 0
+				},
+				"Resist": {
+					"name": "Resistieren",
+					"value": 0
+				},
+				"MeleeValue": {
+					"name": "Nahkampfwert",
+					"value": 0
+				},
+				"RangedCombatValue": {
+					"name": "Fernkampfwert",
+					"value": 0
+				},
+				"Amor": {
+					"name": "Rüstungswert",
 					"value": 0
 				}
 			},
@@ -408,7 +470,7 @@
 					"name": "Verzauberung",
 					"value": 0
 				},
-				"Damage": {
+				"WeaponDamage": {
 					"name": "Schaden",
 					"value": 0
 				},
