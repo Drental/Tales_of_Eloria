@@ -80,6 +80,20 @@
          <td nowrap align="center"><input type="number" name="CosmosConsistent_value" style="width:35px; text-align:center;" title="Kosmoseinklang-Wert" value="{{data.data.CosmosConsistent.value}}"></td>
          <td nowrap align="center"><button type="button" data-toe-roll="1d12" data-toe-ability="CosmosConsistent" title="Klicken zum Würfeln" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button></td>
       </tr>
+      <tr style="width: 120px;">
+         <td colspan="12" style="height: 15px; font-size: 13px; text-align:center; color: rgb(255, 50, 0);" border="1">Schutzspezische Attribute</td>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Entrinnen</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Angriffen auszuweichen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Evade_value" style="width:35px; text-align:center;" title="Entrinnen-Wert" value="{{data.data.Intuition.value}}"></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Abwehren</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Angriffe ins Leere laufen zu lassen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Thwart_value" style="width:35px; text-align:center;" title="Abwehr-Wert" value="{{data.data.SenseOfDanger.value}}"></td>
+         <td nowrap align="center" style="border-right: 1px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Aushalten</label></td>
+            <td nowrap align="center" style="border-left: 1px;"><span style="width: 50px;" title="Die Gabe Schaden wegzustecken">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span>&nbsp;&nbsp;</td>
+         <td nowrap colspan="2" align="center"><input type="number" name="Sustain_value" style="width:35px; text-align:center;" title="Aushalt-Wert" value="{{data.data.CosmosConsistent.value}}"></td>
+      </tr>
    </tbody>
 </table>
 			
@@ -135,6 +149,34 @@
          <td nowrap align="center"><input type="number" name="Death_Threshold_value" style="width:35px; text-align:center;" title="Todesschwelle" value="0"></td>
          <td nowrap align="center"><input type="number" name="ComaRound_value" style="width:35px; text-align:center;" title="Komarunden" value="0"></td>
          <td nowrap align="center"><input type="number" name="HealBase_value" style="width:35px; text-align:center;" title="Heilungsmenge" value="0"></td>         
+      </tr>
+   </tbody>
+</table>
+			
+<div align="left">&nbsp;<br><label style="width: 150px; color: rgb(0, 0, 0); text-align:left;">Kampfspezifische Werte</label></div>
+<table class="attribute_center" border="2">
+   <tbody>
+      <tr>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Ausweichen</label>
+            <span style="width: 50px;" title="Die Kunst Angriffe zu entgehen">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Parieren</label>
+            <span style="width: 50px;" title="Die Kunst Angriffe abzuwehren">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Resistieren</label>
+            <span style="width: 50px;" title="Die Menge der Schadensreduzierung">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Nahkampfwert</label>
+            <span style="width: 50px;" title="Die Kunst des Treffens im Nahkampf">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Fernkampfwert</label>
+            <span style="width: 50px;" title="Der Kunst des Treffens im Fernkampf">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+         <th nowrap style="width: 130px;"><label class="sheet-table-header" style="width: 80px; text-align:center; color: rgb(0, 0, 0);">Rüstungswert</label>
+            <span style="width: 50px;" title="Die Menge an Schaden die durch Rüstung abgehalten wird">&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img></span></th>
+      </tr>
+      <tr style="width: 120px;">
+         <td nowrap align="center"><input type="number" name="Dodge_value" style="width:35px; text-align:center;" title="Ausweichen-Wert" value="0"></td>
+         <td nowrap align="center"><input type="number" name="Parry_value" style="width:35px; text-align:center;" title="Parier-Wert" value="0"></td>
+         <td nowrap align="center"><input type="number" name="Resist_value" style="width:35px; text-align:center;" title="Resistenz-Wert" value="0"></td>
+         <td nowrap align="center"><input type="number" name="Melee_value" style="width:35px; text-align:center;" title="Nahkampf-Wert" value="0"></td>
+         <td nowrap align="center"><input type="number" name="RangedCombat_value" style="width:35px; text-align:center;" title="Fernkampf-Wert" value="0"></td>
+         <td nowrap align="center"><input type="number" name="Amor_value" style="width:35px; text-align:center;" title="Rüst-Wert" value="0"></td>         
       </tr>
    </tbody>
 </table>
