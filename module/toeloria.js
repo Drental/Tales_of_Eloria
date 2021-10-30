@@ -1,8 +1,11 @@
 import toeloriaItemSheet from "./sheets/toeloriaItemSheet.js";
 import toeloriaCharSheet from "./sheets/toeloriaCharSheet.js";
+import toeloriaItem from "./documents/item.js";
 
 Hooks.once("init", async function () {
 	console.log("toeloria | Initialising Tales of Eloria System");
+
+	CONFIG.Item.documentClass = toeloriaItem;
 
 	Items.unregisterSheet("core", ItemSheet);
 	Items.registerSheet("toeloria", toeloriaItemSheet, { makeDefault: true });

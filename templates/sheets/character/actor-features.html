@@ -270,3 +270,103 @@
 <br>
 
 <label style="width: 150px; color: rgb(0, 0, 0); text-align: center;">Spezifische Fertigkeiten</label>
+<div class="section-body">
+	<ol class="features-list item-list">
+		{{#each features as |feature featureId|}}
+			<div class="item feature flexrow" data-item-id="{{feature._id}}">
+				<table class="attribute_center" border="2">
+					<tbody>
+						<tr>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 130px;">Fähigkeit:</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 130px;">Typus:</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 130px;">Schwierigkeit</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 130px;">Wert:</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 130px;">Anwenungsstufe:</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 82px;">Makro:</th>
+							<th nowrap align="center" class="sheet-table-header-left" style="width: 82px;">Entfernen:</th>
+						</tr>
+						<tr>
+							<td nowrap align="center" class="sheet-table-header-left" style="width: 131px;">
+								<span style="width: 50px;" title="Die Belastsamkeit des Körpers">&nbsp;{{feature.name}}&nbsp;&nbsp;<img src="../../systems/toeloria/icons/info.svg" style="height: 15px; width: 15px; border: none;"></img>&nbsp;</span>
+							</td>
+							<td nowrap align="center">
+								&nbsp;
+								<select
+									class=""
+									style="height: 24px; width: 80px; font-size: 0.75em"
+									class=""
+									name="attr_otherfeetstat"
+									title="Ability used for feet"
+								>
+									<option type="text" style="width: 45px" value="1" selected>Magie</option>
+									<option type="text" style="width: 45px" value="1">Glaube</option>
+									<option type="text" style="width: 45px" value="1">Chakra</option>
+								</select>&nbsp;
+							</td>
+							<td nowrap align="center" class="">
+								&nbsp;<input
+									type="text"
+									class=""
+									name="attr_otherfeetabilitymod"
+									style="width: 45px"
+									value="1"
+									disabled="true"
+								/>&nbsp;
+							</td>
+							<td nowrap align="center" class="">
+								&nbsp;
+								<select
+									class=""
+									style="height: 24px; width: 50px; font-size: 0.75em"
+									name="attr_otherfeetranksroll"
+									title="Ability used for feet"
+								>
+									<option type="number" style="width: 45px" value="0">0</option>
+									<option type="number" style="width: 45px" value="1">1</option>
+									<option type="number" style="width: 45px" value="2">2</option>
+									<option type="number" style="width: 45px" value="3">3</option>
+									<option type="number" style="width: 45px" value="4">4</option>
+									<option type="number" style="width: 45px" value="5">5</option>
+									<option type="number" style="width: 45px" value="6">6</option>
+								</select>&nbsp;
+							</td>
+							<td nowrap align="center" class="">
+								&nbsp;
+								<select
+									class=""
+									style="height: 24px; width: 50px; font-size: 0.75em"
+									name="attr_otherfeetuseroll"
+									title="Ability used for feet"
+								>
+									<option type="number" style="width: 45px" value="1">1</option>
+									<option type="number" style="width: 45px" value="2">2</option>
+									<option type="number" style="width: 45px" value="3">3</option>
+									<option type="number" style="width: 45px" value="4">4</option>
+									<option type="number" style="width: 45px" value="5">5</option>
+									<option type="number" style="width: 45px" value="6">6</option>
+								</select>&nbsp;
+							</td>
+							<td nowrap align="center" class="rollable" data-roll-type="item">&nbsp;<button type="button" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button>&nbsp;</td>
+							<td nowrap align="center" ><span class="item-delete delete">&nbsp;<i class="fas fa-trash"></i>&nbsp;</span></td>
+						</tr>
+					</tbody>
+					<tbody>
+						<tr>
+                            <td nowrap align="center">&nbsp;<b>Gegenmaßnahmen:</b>&nbsp;&nbsp;</td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti1" value="{{data.data.Countermeasures.evade_value}}" title="Ausweichbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti2" value="{{data.data.Countermeasures.resist_value}}" title="Widerstehbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti3" value="{{data.data.Countermeasures.parry_value}}" title="Parierbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti4" value="{{data.data.Countermeasures.countervalue}}" title="Konterbar" /></td>
+                            <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
+                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti5" value="{{data.data.Countermeasures.ultimavalue}}" title="Unaufhaltbar" /></td>
+                        </tr>
+					</tbody>
+				</table>
+			</div>
+		{{/each}}
+	</ol>
+</div>

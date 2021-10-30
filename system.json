@@ -25,7 +25,7 @@
 			"name": "fahigkeiten",
 			"path": "packs/fahigkeiten.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  },
 		  {
@@ -34,7 +34,7 @@
 			"name": "fertigkeiten-speziell",
 			"path": "packs/fertigkeiten-speziell.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  },
 		  {
@@ -43,7 +43,7 @@
 			"name": "waffen-and-rustungen",
 			"path": "packs/waffen-and-rustungen.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  },
 		  {
@@ -52,7 +52,7 @@
 			"name": "nichtspieler-charaktere",
 			"path": "packs/nichtspieler-charaktere.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  },
 		  {
@@ -61,7 +61,7 @@
 			"name": "gegnerische-charaktere",
 			"path": "packs/gegnerische-charaktere.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  },
 		  {
@@ -70,7 +70,7 @@
 			"name": "essen-and-proviant",
 			"path": "packs/essen-and-proviant.db",
 			"system": "toeloria",
-			"package": "world",
+			"package": "toeloria",
 			"private": false
 		  }		
 	  ],
