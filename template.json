@@ -411,7 +411,7 @@
 					"value": 0
 				}
 			},
-			"Charinfos_5": {
+			"charinfos_5": {
 				"Channeling": {
 					"name": "Kanalisierung",
 					"Magic": 0,
@@ -503,7 +503,7 @@
 				},
 				"SkillDifficult": {
 					"name": "Wurfschwierigkeit",
-					"value": 12
+					"value": 8
 				},
 				"SkillValue": {
 					"name": "Fähigkeitswert",

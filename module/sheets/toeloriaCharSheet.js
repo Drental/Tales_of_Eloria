@@ -14,6 +14,7 @@ export default class toeloriaCharSheet extends ActorSheet {
 		if (this.isEditable) {
 			html.find(".rollable").on("click", this._onRoll.bind(this));
 			html.find(".item-delete").on("click", (event) => this.onClickDeleteItem(event));
+			html.find(".changeable-value").on("click", (event) => this.onChangeValue(event));
 		}
 	}
 
@@ -78,4 +79,27 @@ export default class toeloriaCharSheet extends ActorSheet {
 
 		await item.delete();
     }
+
+	async onChangeValue(event) {
+		const element = event.currentTarget;
+		const dataset = element.dataset;
+		const $select = $(event.delegateTarget);
+		const selectedValue = Number($select.val());
+        const li = $(event.currentTarget).closest(".item") ?? "";
+        const itemId = li?.attr("data-item-id") ?? "";
+		const item = this.actor.items.get(itemId);
+		const oldvalue = getProperty(item, "data."+dataset.property)
+		if (item) {
+			if (oldvalue != selectedValue) {
+				await this.actor.updateEmbeddedDocuments("Item", [
+					{
+						_id: itemId,
+						[dataset.property]: selectedValue,
+					},
+				]);
+			}
+		} else {
+
+		}
+	}
 }
