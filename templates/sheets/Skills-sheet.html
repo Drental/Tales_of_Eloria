@@ -17,11 +17,11 @@
 				<td nowrap align="center">Stufe: </td>
 			</tr>
 			<tr>
-				<td nowrap align="center"><input name="Name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Typus" type="text" value="{{actor.data.SkillTypus.value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Difficult" type="number" value="{{actor.data.SkillDifficult.value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="SkillValue" type="number" value="{{actor.data.SkillValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="SkillUsage" type="number" value="{{actor.data.SkillUsage.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="text" name="Name" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="text" name="data.SkillTypus.value" value="{{item.data.SkillTypus.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="number" name="data.SkillDifficult.value" value="{{item.data.SkillDifficult.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="number" name="data.SkillValue.value" value="{{item.data.SkillValue.value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="number" name="data.SkillUsage.value" value="{{item.data.SkillUsage.value}}" placeholder="{{ localize 'Name' }}" /></td>
 			</tr>
 		</tbody>
 	</table>
@@ -39,11 +39,11 @@
 				<td nowrap align="center">Unaufhaltbar: </td>
 			</tr>
 			<tr>
-				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.evade_value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.resist_value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.parry_value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.counter_value}}" placeholder="{{ localize 'Name' }}" /></td>
-				<td nowrap align="center"><input name="Typus" type="checkbox" value="{{actor.data.Countermeasures.ultima_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="checkbox" name="data.Countermeasures.evade_value" value="{{item.data.Countermeasures.evade_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="checkbox" name="data.Countermeasures.resist_value" value="{{item.data.Countermeasures.resist_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="checkbox" name="data.Countermeasures.parry_value" value="{{item.data.Countermeasures.parry_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="checkbox" name="data.Countermeasures.counter_value" value="{{item.data.Countermeasures.counter_value}}" placeholder="{{ localize 'Name' }}" /></td>
+				<td nowrap align="center"><input type="checkbox" name="data.Countermeasures.ultima_value" value="{{item.data.Countermeasures.ultima_value}}" placeholder="{{ localize 'Name' }}" /></td>
 			</tr>
 		</tbody>
 	</table>
@@ -53,7 +53,7 @@
 				<td nowrap align="center">Beschreibung: </td>
 			</tr>
 			<tr>
-				<td nowrap align="center"><textarea style="width: 450px; height: 100px;" name="ItemDiscription" title="ItemDiscription" value="{{actor.data.ItemDiscription.value}}" placeholder="{{ localize 'Name' }}"></textarea></td>				
+				<td nowrap align="center"><textarea style="width: 450px; height: 100px;" name="data.ItemDiscription.value" title="ItemDiscription" value="{{item.data.ItemDiscription.value}}" placeholder="{{ localize 'Name' }}"></textarea></td>				
 			</tr>
 		</tbody>
 	</table>

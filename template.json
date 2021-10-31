@@ -322,18 +322,18 @@
 					"name": "{{actor.name}}"
 				},
 				"PlayerName": {
-					"name": ""
+					"name": "Spielername"
 				},
 				"CharLevel": {
 					"name": "Charakterstufe",
 					"value": 1
 				},
 				"Species":{
-					"name": "",
+					"name": "Volk",
 					"value": ""
 				},
 				"Class":{
-					"name": "",
+					"name": "Klasse",
 					"value": ""
 				}
 			},
@@ -411,6 +411,19 @@
 					"value": 0
 				}
 			},
+			"Charinfos_5": {
+				"Channeling": {
+					"name": "Kanalisierung",
+					"Magic": 0,
+					"Faith": 0,
+					"Spirit": 0
+				},
+				"ChannelResources":{
+					"Mana": 0,
+					"ManaCom": 0,
+					"ManaReg": 0
+				}
+			},
 			"equipment": {
 				"Loot": {
 					"name": "Loot",
@@ -433,17 +446,7 @@
 			}
 		},
 		"Charakter": {
-			"templates": [
-				"mainattributes",
-				"subattributes",
-				"features",
-				"charinfos_1",
-				"charinfos_2",
-				"charinfos_3",
-				"charinfos_4",
-				"equipment",
-				"profile"
-			]
+			"templates": ["mainattributes", "subattributes", "features", "charinfos_1", "charinfos_2", "charinfos_3", "charinfos_4", "charinfos_5", "equipment", "profile"]
 		},
 		"NPC": {
 			"templates": ["mainattributes", "subattributes", "features", "charinfos_1", "equipment"]

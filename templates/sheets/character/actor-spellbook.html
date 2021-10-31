@@ -23,22 +23,21 @@
 								<select
 									class=""
 									style="height: 24px; width: 80px; font-size: 0.75em"
-									class=""
-									name="attr_otherfeetstat"
+									name="data.SkillTypus.value"
 									title="Ability used for feet"
 								>
-									<option type="text" style="width: 45px" value="1" selected>Magie</option>
-									<option type="text" style="width: 45px" value="1">Glaube</option>
-									<option type="text" style="width: 45px" value="1">Chakra</option>
+									<option type="text" style="width: 45px" value="{{actor.data.SkillTypus.value}}" selected>Magie</option>
+									<option type="text" style="width: 45px" value="{{actor.data.SkillTypus.value}}">Glaube</option>
+									<option type="text" style="width: 45px" value="{{actor.data.SkillTypus.value}}">Chakra</option>
 								</select>&nbsp;
 							</td>
-							<td nowrap align="center" class="">
+							<td nowrap align="center">
 								&nbsp;<input
-									type="text"
+									type="number"
 									class=""
-									name="attr_otherfeetabilitymod"
+									name="data.SkillDifficult.value"
 									style="width: 45px"
-									value="1"
+									value="{{actor.data.SkillDifficult.value}}"
 									disabled="true"
 								/>&nbsp;
 							</td>
@@ -47,16 +46,16 @@
 								<select
 									class=""
 									style="height: 24px; width: 50px; font-size: 0.75em"
-									name="attr_otherfeetranksroll"
+									name="data.SkillValue.value"
 									title="Ability used for feet"
 								>
-									<option type="number" style="width: 45px" value="0">0</option>
-									<option type="number" style="width: 45px" value="1">1</option>
-									<option type="number" style="width: 45px" value="2">2</option>
-									<option type="number" style="width: 45px" value="3">3</option>
-									<option type="number" style="width: 45px" value="4">4</option>
-									<option type="number" style="width: 45px" value="5">5</option>
-									<option type="number" style="width: 45px" value="6">6</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">0</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">1</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">2</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">3</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">4</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">5</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillValue.value}}">6</option>
 								</select>&nbsp;
 							</td>
 							<td nowrap align="center" class="">
@@ -64,15 +63,15 @@
 								<select
 									class=""
 									style="height: 24px; width: 50px; font-size: 0.75em"
-									name="attr_otherfeetuseroll"
+									name="data.SkillUsage.value"
 									title="Ability used for feet"
 								>
-									<option type="number" style="width: 45px" value="1">1</option>
-									<option type="number" style="width: 45px" value="2">2</option>
-									<option type="number" style="width: 45px" value="3">3</option>
-									<option type="number" style="width: 45px" value="4">4</option>
-									<option type="number" style="width: 45px" value="5">5</option>
-									<option type="number" style="width: 45px" value="6">6</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">1</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">2</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">3</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">4</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">5</option>
+									<option type="number" style="width: 45px" value="{{actor.data.SkillUsage.value}}">6</option>
 								</select>&nbsp;
 							</td>
 							<td nowrap align="center" class="rollable" data-roll-type="item">&nbsp;<button type="button" style="background-image:url(../../systems/toeloria/icons/d12_kl.png); height: 27px; width: 27px;"></button>&nbsp;</td>
@@ -83,15 +82,15 @@
 						<tr>
                             <td nowrap align="center">&nbsp;<b>Gegenmaßnahmen:</b>&nbsp;&nbsp;</td>
                             <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Ausweichbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti1" value="{{data.data.Countermeasures.evade_value}}" title="Ausweichbar" /></td>
+                            <td nowrap align="center"><input type="checkbox" name="data.Countermeasures.evade_value" value="{{actor.data.Countermeasures.evade_value}}" title="Ausweichbar" /></td>
                             <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Widerstehbar: &nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti2" value="{{data.data.Countermeasures.resist_value}}" title="Widerstehbar" /></td>
+                            <td nowrap align="center"><input type="checkbox" name="data.Countermeasures.resist_value" value="{{actor.data.Countermeasures.resist_value}}" title="Widerstehbar" /></td>
                             <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Parierbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti3" value="{{data.data.Countermeasures.parry_value}}" title="Parierbar" /></td>
+                            <td nowrap align="center"><input type="checkbox" name="data.Countermeasures.parry_value" value="{{actor.data.Countermeasures.parry_value}}" title="Parierbar" /></td>
                             <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Konterbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti4" value="{{data.data.Countermeasures.countervalue}}" title="Konterbar" /></td>
+                            <td nowrap align="center"><input type="checkbox" name="data.Countermeasures.counter_value" value="{{actor.data.Countermeasures.counter_value}}" title="Konterbar" /></td>
                             <td nowrap align="center">&nbsp;&nbsp;&nbsp;&nbsp; Unaufhaltbar: &nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td nowrap align="center"><input type="checkbox" name="attr_chk_anti5" value="{{data.data.Countermeasures.ultimavalue}}" title="Unaufhaltbar" /></td>
+                            <td nowrap align="center"><input type="checkbox" name="data.Countermeasures.ultima_value" value="{{actor.data.Countermeasures.ultima_value}}" title="Unaufhaltbar" /></td>
                         </tr>
 					</tbody>
 				</table>
